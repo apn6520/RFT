@@ -1,0 +1,24 @@
+2 2016.08.08 12:31:51:0202 4756 INFO: UserId-apn6520open reviewer index Search.
+3 2016.08.08 12:32:00:6291 9604 Info : Method Name - GetJournal : term-& Journal count93
+4 2016.08.08 12:32:02:0463 1413 Info : Method Name - GetJournal : term-& Journal count93
+2 2016.08.08 15:22:31:2358 8303380 INFO: UserId-apn6520open reviewer index Search.
+3 2016.08.08 15:22:37:6041 6361 Info : Method Name - GetJournal : term-& Journal count93
+4 2016.08.08 15:22:40:3713 2766 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+5 2016.08.08 15:22:44:8936 4514 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+6 2016.08.08 15:22:44:9076 4 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+7 2016.08.08 15:22:44:9106 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+8 2016.08.08 15:22:45:0066 88 Info : Method Name - GetJournal : term-& Journal count93
+9 2016.08.08 15:23:18:2825 33268 Info : Method Name - DisplayManuscriptDetails , Key : LoadSelectedReviewers , MSID : Null , reviewersId : 0, 57004, 57003 loaded successfully.
+10 2016.08.08 15:25:31:5991 133311 Info : Method Name - GetJournal : term-& Journal count93
+11 2016.08.08 15:25:37:2094 5579 Info : Method Name - DisplayManuscriptDetails , Key : LoadSelectedReviewers , MSID : Null , reviewersId : 0, 57005 loaded successfully.
+12 2016.08.08 15:25:45:8869 8674 Info : Method Name - GetJournal : term-& Journal count93
+13 2016.08.08 15:25:48:2250 2331 Info : Method Name - GetJournal : term-& Journal count93
+14 2016.08.08 15:25:50:4442 2212 Info : Method Name - GetJournal : term-& Journal count93
+15 2016.08.08 15:25:52:7003 2252 Info : Method Name - GetJournal : term-& Journal count93
+16 2016.08.08 15:25:53:2023 498 Info : Method Name - GetJournal : term-& Journal count93

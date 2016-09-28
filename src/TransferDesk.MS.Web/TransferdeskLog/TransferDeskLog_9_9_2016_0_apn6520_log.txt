@@ -1,0 +1,50 @@
+2 2016.09.09 12:05:14:5350 42739 INFO: UserId-apn6520open reviewer index Search.
+3 2016.09.09 12:05:17:7966 3246 Info : Method Name - GetJournal : term-& Journal count98
+4 2016.09.09 12:05:19:1286 1331 Info : Method Name - GetJournal : term-& Journal count98
+5 2016.09.09 12:05:22:2132 3072 Info : Method Name - GetJournal : term-& Journal count98
+6 2016.09.09 12:05:22:9542 741 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+7 2016.09.09 12:05:30:6247 7667 Info : Method Name - GetJournal : term-& Journal count98
+8 2016.09.09 12:05:43:4913 12851 Info : Method Name - GetJournal : term-& Journal count98
+9 2016.09.09 12:05:49:6813 6192 Info : Method Name - GetJournal : term-& Journal count98
+10 2016.09.09 12:24:59:1377 1149419 Info : Method Name - GetJournal : term-& Journal count98
+11 2016.09.09 12:24:59:6547 495 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+12 2016.09.09 12:25:43:0062 43346 Info : Method Name - GetJournal : term-& Journal count98
+13 2016.09.09 12:25:43:6093 598 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+14 2016.09.09 12:25:57:2730 13659 Info : Method Name - GetJournal : term-& Journal count98
+15 2016.09.09 12:25:59:9502 2669 Info : Method Name - GetJournal : term-& Journal count98
+16 2016.09.09 12:26:00:4302 475 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+17 2016.09.09 12:26:01:6773 1232 Info : Method Name - GetJournal : term-& Journal count98
+18 2016.09.09 13:51:55:0806 5153021 INFO: UserId-apn6520 open reviewer profile.
+19 2016.09.09 13:51:56:3343 1253 Info : Method Name - GetJournal : term-& Journal count98
+20 2016.09.09 13:51:56:8464 510 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+21 2016.09.09 13:52:04:0294 7181 Info : Method Name - GetJournal : term-& Journal count98
+22 2016.09.09 13:52:20:5279 16536 Info : Method Name - GetJournal : term-& Journal count98
+23 2016.09.09 13:52:21:0500 517 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+24 2016.09.09 13:52:48:5150 27512 Info : Method Name - GetJournal : term-& Journal count98
+25 2016.09.09 13:52:53:4221 4901 Info : Method Name - GetJournal : term-& Journal count98
+26 2016.09.09 13:52:53:9502 524 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+27 2016.09.09 13:52:57:0655 3096 Info : Method Name - GetJournal : term-& Journal count98
+28 2016.09.09 14:03:53:8726 657396 Info : Method Name - GetJournal : term-& Journal count98
+29 2016.09.09 14:04:18:4071 24547 Info : Method Name - GetJournal : term-& Journal count98
+30 2016.09.09 14:04:18:9489 522 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+31 2016.09.09 14:04:20:4836 1526 Info : Method Name - GetJournal : term-& Journal count98
+32 2016.09.09 14:04:22:6931 2215 Info : Method Name - GetJournal : term-& Journal count98
+33 2016.09.09 14:04:29:4657 6759 Info : Method Name - GetJournal : term-& Journal count98
+34 2016.09.09 14:04:30:0055 519 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+35 2016.09.09 14:04:31:2228 1218 Info : Method Name - GetJournal : term-& Journal count98
+36 2016.09.09 14:04:32:3425 1104 Info : Method Name - GetJournal : term-& Journal count98
+2 2016.09.09 14:05:23:9106 5097 INFO: UserId-apn6520 open reviewer profile.
+3 2016.09.09 14:05:23:9181 1 INFO: UserId-apn6520 open reviewer profile.
+4 2016.09.09 14:05:38:5185 14583 Info : Method Name - GetJournal : term-& Journal count98
+5 2016.09.09 14:05:39:0084 486 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+6 2016.09.09 14:10:24:8067 285799 Info : Method Name - GetJournal : term-& Journal count98
+7 2016.09.09 14:13:18:2877 173470 Info : Method Name - GetJournal : term-& Journal count98
+8 2016.09.09 14:13:18:8077 514 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+9 2016.09.09 14:26:10:6570 771866 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+10 2016.09.09 14:26:11:1590 486 Info : Method Name - GetJournal : term-& Journal count98
+11 2016.09.09 14:28:18:8708 127686 Info : Method Name - GetJournal : term-& Journal count98
+12 2016.09.09 14:28:19:3888 507 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+13 2016.09.09 15:01:24:5670 1985047 INFO: UserId-apn6520 open reviewer profile.
+14 2016.09.09 15:01:26:5881 2011 Info : Method Name - GetJournal : term-& Journal count98
+15 2016.09.09 15:01:27:1382 534 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+16 2016.09.09 15:01:39:4514 12286 Info : Method Name - GetJournal : term-& Journal count98

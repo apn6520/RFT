@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Transfer Desk</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/Notification.css" rel="stylesheet" />
+    <script src="~/Scripts/CustomeScript/ReviewerIndexLayout.js"></script>
+    <script type="text/javascript">       
+        var AppPath = "@(new Uri(Request.Url, Url.Content("~")))";
+    </script>
+    <style>
+        .headingReviewer {
+            padding-left: 125px;
+            font-family: Arial;
+            font-size: 25px;
+        }
+        .reviewerIndexBody
+        {
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="NotificationMessageControl">
+        <div id="Notification-Container">
+            <div id="NotificationMessage">
+            </div>
+            <div id="CloseButton"><a onclick="HideNotification()" class="close"></a></div>           
+        </div>
+    </div>  
+    <div class="navbar navbar-fixed-top" style="background-color:whitesmoke;">
+        <div style="padding-left:30px; padding-right:20px">
+            <br />          
+            <div class="row panel-title header_section" style="background-color: whitesmoke; height: 75px; margin-top: -30px">
+                <div class="col-sm-5 sm-padding">
+                    <img src="~/Images/Springer-Nature.jpg" alt="Springer-Nature Logo" title="Springer-Nature Logo" style="padding-top: 15px; vertical-align: middle; width:300px; height:50px;">
+                </div>
+                <div class="col-sm-4">
+                    <span style="font-size: 1.7em" class="heading">
+                        <span id="lblheading" style="color: #192F5A; padding-top: 18px; font-size:25px; vertical-align: middle; float: left;">Auto Login Journals</span>
+
+                    </span>
+                </div>
+                <div class="col-sm-3" style="text-align: right; top: 0px; left: 0px; padding-top: 15px;">
+                    <span id="lblNameDesignation" style="color:#192F5A;font-size:12px;font-weight:bold;"></span>@*@Session["UserName"].ToString()*@
+                    <br>
+                    <span id="lblDate" style="color:#192F5A;font-size:12px;font-weight:bold;">@string.Format("{0:dddd, d MMMM, yyyy}", @DateTime.Now.Date)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal fade modal-wide" tabindex='-1' data-backdrop="static" data-dismiss="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <label> Search Result(s)</label>
+                    <button type="button" class="close" data-dismiss="modal" name="ClosePopup" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+
+                    <div id="myPartialViewDiv" class="table-responsive">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btnOk" class="btn btn-default btn-sm">Ok</button>
+                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal" name="ClosePopup">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviewerIndexBody">
+        @RenderBody()
+        <br />
+        <hr />
+        <footer>
+            <div class="col-md-10">
+                <p align="center" style="margin-left: 15%;"> Copyright &copy; @DateTime.Now.Year | Springer Nature</p>
+            </div>
+            <div class="col-md-2">
+                <p style="text-align: right;">MS v1.0.10</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+1 2016.07.18 11:53:16:6424 48 Application started on computer LAINPUMA0335 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.18 11:53:16:7974 0 Try Register the container as  IDependencyResolver.
+
+1 2016.07.18 11:54:39:4707 2 Application started on computer LAINPUMA0335 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.18 11:54:39:4717 0 Try Register the container as  IDependencyResolver.
+
+1 2016.07.18 11:59:53:4874 24 Application started on computer LAINPUMA0335 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.18 11:59:53:5344 0 Try Register the container as  IDependencyResolver.
+
+1 2016.07.18 12:01:37:7638 10 Application started on computer LAINPUMA0335 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.18 12:01:37:8618 0 Try Register the container as  IDependencyResolver.
+
+1 2016.07.18 12:10:08:1728 1 Application started on computer LAINPUMA0335 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.18 12:10:08:1738 0 Try Register the container as  IDependencyResolver.
+
+3 2016.07.18 12:10:46:6239 1705 Loading BookLogin 
+4 2016.07.18 12:10:48:0560 1432 Job with id : 78is already loggedin
+5 2016.07.18 12:11:00:6188 1198 Loading BookLogin 
+6 2016.07.18 12:12:11:9511 1486 Loading BookLogin 

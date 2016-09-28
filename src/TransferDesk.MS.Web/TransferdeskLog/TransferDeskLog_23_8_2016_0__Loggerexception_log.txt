@@ -1,0 +1,256 @@
+2 2016.08.23 17:54:09:1013 1034467 message that was being written when exception occured --
+2 2016.08.23 17:54:09:1013 1034467 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:54:09:5114 1034880 message that was being written when exception occured --
+2 2016.08.23 17:54:09:5114 1034880 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:54:10:0614 1035426 message that was being written when exception occured --
+2 2016.08.23 17:54:10:0614 1035426 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:54:10:8464 1036228 message that was being written when exception occured --
+2 2016.08.23 17:54:10:8464 1036228 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:54:11:1934 1036560 message that was being written when exception occured --
+2 2016.08.23 17:54:11:1934 1036560 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:54:43:6487 1069012 message that was being written when exception occured --
+2 2016.08.23 17:54:43:6487 1069012 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:54:43:9787 1069351 message that was being written when exception occured --
+2 2016.08.23 17:54:43:9787 1069351 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:55:16:2790 1101657 message that was being written when exception occured --
+2 2016.08.23 17:55:16:2790 1101657 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:55:16:6841 1102062 message that was being written when exception occured --
+2 2016.08.23 17:55:16:6841 1102062 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:27:5421 1232904 message that was being written when exception occured --
+2 2016.08.23 17:57:27:5421 1232904 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:28:2261 1233590 message that was being written when exception occured --
+2 2016.08.23 17:57:28:2261 1233590 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:32:5226 1237885 message that was being written when exception occured --
+2 2016.08.23 17:57:32:5226 1237885 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:32:7701 1238136 message that was being written when exception occured --
+2 2016.08.23 17:57:32:7701 1238136 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:38:2686 1243629 message that was being written when exception occured --
+2 2016.08.23 17:57:38:2686 1243629 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:38:5586 1243916 message that was being written when exception occured --
+2 2016.08.23 17:57:38:5586 1243916 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:52:5280 1257886 message that was being written when exception occured --
+2 2016.08.23 17:57:52:5280 1257886 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:52:8530 1258216 message that was being written when exception occured --
+2 2016.08.23 17:57:52:8530 1258216 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:59:0175 1264376 message that was being written when exception occured --
+2 2016.08.23 17:57:59:0175 1264376 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:57:59:3650 1264723 message that was being written when exception occured --
+2 2016.08.23 17:57:59:3650 1264723 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:58:04:2619 1269622 message that was being written when exception occured --
+2 2016.08.23 17:58:04:2619 1269622 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:58:04:5819 1269940 message that was being written when exception occured --
+2 2016.08.23 17:58:04:5819 1269940 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:58:29:6602 1295026 message that was being written when exception occured --
+2 2016.08.23 17:58:29:6602 1295026 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:58:29:9902 1295352 message that was being written when exception occured --
+2 2016.08.23 17:58:29:9902 1295352 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:58:35:4722 1300836 message that was being written when exception occured --
+2 2016.08.23 17:58:35:4722 1300836 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:58:35:6622 1301025 message that was being written when exception occured --
+2 2016.08.23 17:58:35:6622 1301025 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:58:45:4346 1310795 message that was being written when exception occured --
+2 2016.08.23 17:58:45:4346 1310795 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 17:58:45:6246 1310982 message that was being written when exception occured --
+2 2016.08.23 17:58:45:6246 1310982 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:01:47:1865 1492545 message that was being written when exception occured --
+2 2016.08.23 18:01:47:1865 1492545 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:01:47:5265 1492889 message that was being written when exception occured --
+2 2016.08.23 18:01:47:5265 1492889 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:04:52:9329 1678277 message that was being written when exception occured --
+2 2016.08.23 18:04:52:9329 1678277 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:04:53:4929 1678842 message that was being written when exception occured --
+2 2016.08.23 18:04:53:4929 1678842 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:05:07:5153 1692863 message that was being written when exception occured --
+2 2016.08.23 18:05:07:5153 1692863 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:05:07:8353 1693183 message that was being written when exception occured --
+2 2016.08.23 18:05:07:8353 1693183 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:05:13:3169 1698661 message that was being written when exception occured --
+2 2016.08.23 18:05:13:3169 1698661 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:05:13:7569 1699107 message that was being written when exception occured --
+2 2016.08.23 18:05:13:7569 1699107 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:06:24:6935 1770039 message that was being written when exception occured --
+2 2016.08.23 18:06:24:6935 1770039 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:06:25:0235 1770369 message that was being written when exception occured --
+2 2016.08.23 18:06:25:0235 1770369 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:06:25:3435 1770690 message that was being written when exception occured --
+2 2016.08.23 18:06:25:3435 1770690 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:06:32:2613 1777607 message that was being written when exception occured --
+2 2016.08.23 18:06:32:2613 1777607 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:06:32:4413 1777785 message that was being written when exception occured --
+2 2016.08.23 18:06:32:4413 1777785 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:06:38:2261 1783575 message that was being written when exception occured --
+2 2016.08.23 18:06:38:2261 1783575 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:06:38:4861 1783835 message that was being written when exception occured --
+2 2016.08.23 18:06:38:4861 1783835 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:06:55:3368 1800684 message that was being written when exception occured --
+2 2016.08.23 18:06:55:3368 1800684 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:06:55:5568 1800898 message that was being written when exception occured --
+2 2016.08.23 18:06:55:5568 1800898 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:08:10:6533 1875988 message that was being written when exception occured --
+2 2016.08.23 18:08:10:6533 1875988 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:08:10:9634 1876301 message that was being written when exception occured --
+2 2016.08.23 18:08:10:9634 1876301 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:08:11:5709 1876905 message that was being written when exception occured --
+2 2016.08.23 18:08:11:5709 1876905 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:08:15:8896 1881228 message that was being written when exception occured --
+2 2016.08.23 18:08:15:8896 1881228 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:08:16:2196 1881553 message that was being written when exception occured --
+2 2016.08.23 18:08:16:2196 1881553 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:13:10:6031 35572 message that was being written when exception occured --
+2 2016.08.23 18:13:10:6031 35572 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:13:11:0731 36037 message that was being written when exception occured --
+2 2016.08.23 18:13:11:0731 36037 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:13:20:3650 45333 message that was being written when exception occured --
+2 2016.08.23 18:13:20:3650 45333 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:13:20:6050 45578 message that was being written when exception occured --
+2 2016.08.23 18:13:20:6050 45578 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:15:28:7602 173722 message that was being written when exception occured --
+2 2016.08.23 18:15:28:7602 173722 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:15:30:3197 175284 message that was being written when exception occured --
+2 2016.08.23 18:15:30:3197 175284 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:15:56:7378 201697 message that was being written when exception occured --
+2 2016.08.23 18:15:56:7378 201697 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:15:57:1078 202064 message that was being written when exception occured --
+2 2016.08.23 18:15:57:1078 202064 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:16:08:3707 213327 message that was being written when exception occured --
+2 2016.08.23 18:16:08:3707 213327 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:16:08:7007 213662 message that was being written when exception occured --
+2 2016.08.23 18:16:08:7007 213662 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:16:10:7007 215658 message that was being written when exception occured --
+2 2016.08.23 18:16:10:7007 215658 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:16:17:0079 221970 message that was being written when exception occured --
+2 2016.08.23 18:16:17:0079 221970 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:16:17:2279 222189 message that was being written when exception occured --
+2 2016.08.23 18:16:17:2279 222189 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:21:06:0037 510948 message that was being written when exception occured --
+2 2016.08.23 18:21:06:0037 510948 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229
+2 2016.08.23 18:21:06:5682 511517 message that was being written when exception occured --
+2 2016.08.23 18:21:06:5682 511517 System.Exception: Invalid UserID length greater than 9 characters or contains space in windows user Id 
+   at TransferDesk.Logger.FileLogger.WriteToDiskFile(String message, String userId) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 261
+   at TransferDesk.Logger.FileLogger.Log(String userId, String message) in d:\RI TO MVC\Manuscript_Services_tech_Dev\Manuscript_Services_tech_Dev\Manuscript_Services_Tech_Dev\src\TransferDesk.Logger\Logger.cs:line 229

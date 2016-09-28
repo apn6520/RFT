@@ -1,0 +1,13 @@
+2 2016.09.12 14:01:58:0170 52578 INFO: UserId-apn6520open reviewer index Search.
+3 2016.09.12 14:02:08:3348 10312 Info : Method Name - GetJournal : term-& Journal count99
+4 2016.09.12 14:02:09:0994 761 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+5 2016.09.12 14:02:11:7618 2658 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 100
+
+6 2016.09.12 14:02:11:7678 2 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+7 2016.09.12 14:02:11:7728 1 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 100firstRow: 100lastRow: 81
+8 2016.09.12 14:02:12:9301 1153 Info : Method Name - GetJournal : term-& Journal count99

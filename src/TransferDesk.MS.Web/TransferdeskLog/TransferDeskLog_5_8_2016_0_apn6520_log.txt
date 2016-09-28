@@ -1,0 +1,412 @@
+2 2016.08.05 11:52:52:2263 86006 INFO: UserId-apn6520 open reviewer profile.
+3 2016.08.05 11:52:56:9913 4749 Info : Method Name - GetJournal : term-& Journal count93
+4 2016.08.05 11:52:57:2563 273 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+5 2016.08.05 11:53:21:5423 24285 Info : Method Name - GetJournal : term-& Journal count93
+6 2016.08.05 11:53:22:0523 501 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+7 2016.08.05 11:54:18:8863 56832 Info : Method Name - GetJournal : term-& Journal count93
+8 2016.08.05 11:54:19:4153 523 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+9 2016.08.05 11:58:06:1073 226692 Info : Method Name - GetJournal : term-& Journal count93
+10 2016.08.05 11:58:06:5663 454 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+11 2016.08.05 11:59:28:3501 81776 Info : Method Name - GetJournal : term-& Journal count93
+12 2016.08.05 11:59:28:8672 511 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+13 2016.08.05 12:01:35:0854 126193 Info : Method Name - GetJournal : term-& Journal count93
+14 2016.08.05 12:01:35:6285 535 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+15 2016.08.05 12:08:50:5919 434910 Info : Method Name - GetJournal : term-& Journal count93
+16 2016.08.05 12:08:50:7269 131 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+17 2016.08.05 12:09:11:1780 20446 Info : Method Name - GetJournal : term-& Journal count93
+18 2016.08.05 12:09:11:6910 508 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+19 2016.08.05 12:14:54:9344 343204 Info : Method Name - GetJournal : term-& Journal count93
+20 2016.08.05 12:14:55:2544 314 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+21 2016.08.05 12:16:33:8081 98538 Info : Method Name - GetJournal : term-& Journal count93
+22 2016.08.05 12:16:34:3542 526 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+23 2016.08.05 12:18:21:0777 106731 Info : Method Name - GetJournal : term-& Journal count93
+24 2016.08.05 12:18:21:5977 515 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+25 2016.08.05 12:20:26:2711 124663 Info : Method Name - GetJournal : term-& Journal count93
+26 2016.08.05 12:20:26:7712 495 Info : Method Name - GetJournal : term-& Journal count93
+27 2016.08.05 12:20:33:4218 6647 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+28 2016.08.05 12:20:34:1879 755 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+29 2016.08.05 12:20:34:1959 3 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+30 2016.08.05 12:20:34:2009 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+31 2016.08.05 12:20:37:3562 3149 GetReviewerDetails > method execution start for reviewerID :57004StartTime :05/08/2016 12:20:36
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 12:20:37
+
+32 2016.08.05 12:20:37:3642 1 Info: Method Name - LoadProfileData : ReviewerId-57004
+33 2016.08.05 12:20:37:9173 544 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+34 2016.08.05 12:20:38:4443 521 Info : Method Name - GetJournal : term-& Journal count93
+35 2016.08.05 12:20:43:7189 5266 spSaveUpdateReviewerDetails execution start
+this are sqlParameters we are passing to store procedures -> InitialsLastNameFirstNameMiddleNameNameReviewerIdInstituteIDDeptIdStreetNameCityIDNoOfPublicationsUserID
+spSaveUpdateReviewerDetails execution end
+
+36 2016.08.05 12:20:44:7930 1064 DeleteReviewerMailByReviewerId execution start for reviewerId :57004
+DeleteReviewerMailByReviewerId execution end for reviewerId :57004
+
+37 2016.08.05 12:20:45:2740 473 DeleteReferenceLinkByReviewerId execution start for reviewerId :57004
+DeleteReferenceLinkByReviewerId execution end for reviewerId :57004
+
+38 2016.08.05 12:20:45:4470 164 DeleteJournalByReviewerId execution start for reviewerId :57004
+DeleteJournalByReviewerId execution end for reviewerId :57004
+
+39 2016.08.05 12:20:45:9021 444 UpdateAreaOfExpReviewerlink execution start for ReviewerMasterID :57004
+UpdateAreaOfExpReviewerlink execution end for ReviewerMasterID :57004
+
+40 2016.08.05 12:20:46:3201 408 DeleteTitleReviewerByReviewerId execution start for reviewerId :57004
+DeleteTitleReviewerByReviewerId execution end for reviewerId :57004
+
+41 2016.08.05 12:20:46:5481 218 Info : Method Name - SaveReviewerProfile : reviewerId57004Profile{"ReviewerID":57004,"Initials":"Prof.","FirstName":"Sandip","LastName":"Deshpande","MiddleName":"","NoOfPublication":2,"ReviewerName":null,"StreetName":"Main Street","InstituteID":5749,"DeptID":212,"InstituteName":"Santa Clara University","DepartmentName":"Computer Science and Engineering","CityId":56967,"City":"Santa Clara","StateId":56848,"State":"California","CountryID":56804,"Country":"USA","TitleMasterID":null,"CreatedBy":"apn6520","ReviewerEmails":[{"ID":57118,"ReviewerMasterID":57004,"Email":"san@abc.com","IsActive":true,"ModifiedDate":null}],"ReferenceLink":[{"ID":137974,"ReferenceLink":"abc.com","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null}],"Journal":[{"JournalID":93,"JournalTitle":"Biochemical Genetics (BIGI)","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null}],"TitleMaster":[{"ID":36,"MScriptID":"121 ","Name":"A set of four simple performance measures reflecting adherence to guidelines predicts hospitalization: A claims-based cohort study of patients with diabetes","IsActive":true,"ModifiedDate":null,"CreatedBy":"narw01"}],"AreaOfExpReviewerlink":[{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004},{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004},{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004}]}
+42 2016.08.05 12:20:48:8244 2265 GetReviewerDetails > method execution start for reviewerID :57004StartTime :05/08/2016 12:20:48
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 12:20:48
+
+43 2016.08.05 12:20:48:8334 0 Info: Method Name - LoadProfileData : ReviewerId-57004
+44 2016.08.05 12:20:48:9414 100 Info : Method Name - GetJournal : term-& Journal count93
+45 2016.08.05 12:20:49:3784 430 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+46 2016.08.05 12:20:53:5078 4123 Info : Method Name - GetJournal : term-a& Journal count68
+47 2016.08.05 12:20:53:6299 109 Info : Method Name - GetJournal : term-an& Journal count24
+48 2016.08.05 12:21:01:3546 7714 spSaveUpdateReviewerDetails execution start
+this are sqlParameters we are passing to store procedures -> InitialsLastNameFirstNameMiddleNameNameReviewerIdInstituteIDDeptIdStreetNameCityIDNoOfPublicationsUserID
+spSaveUpdateReviewerDetails execution end
+
+49 2016.08.05 12:21:01:3876 24 DeleteReviewerMailByReviewerId execution start for reviewerId :57004
+DeleteReviewerMailByReviewerId execution end for reviewerId :57004
+
+50 2016.08.05 12:21:01:4466 51 DeleteReferenceLinkByReviewerId execution start for reviewerId :57004
+DeleteReferenceLinkByReviewerId execution end for reviewerId :57004
+
+51 2016.08.05 12:21:01:4936 39 DeleteJournalByReviewerId execution start for reviewerId :57004
+DeleteJournalByReviewerId execution end for reviewerId :57004
+
+52 2016.08.05 12:21:01:6187 118 UpdateAreaOfExpReviewerlink execution start for ReviewerMasterID :57004
+UpdateAreaOfExpReviewerlink execution end for ReviewerMasterID :57004
+
+53 2016.08.05 12:21:01:8667 241 DeleteTitleReviewerByReviewerId execution start for reviewerId :57004
+DeleteTitleReviewerByReviewerId execution end for reviewerId :57004
+
+54 2016.08.05 12:21:01:9607 84 Info : Method Name - SaveReviewerProfile : reviewerId57004Profile{"ReviewerID":57004,"Initials":"Prof.","FirstName":"Sandip","LastName":"Deshpande","MiddleName":"","NoOfPublication":2,"ReviewerName":null,"StreetName":"Main Street","InstituteID":5749,"DeptID":212,"InstituteName":"Santa Clara University","DepartmentName":"Computer Science and Engineering","CityId":56967,"City":"Santa Clara","StateId":56848,"State":"California","CountryID":56804,"Country":"USA","TitleMasterID":null,"CreatedBy":"apn6520","ReviewerEmails":[{"ID":57120,"ReviewerMasterID":57004,"Email":"san@abc.com","IsActive":true,"ModifiedDate":null}],"ReferenceLink":[{"ID":137977,"ReferenceLink":"abc.com","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null}],"Journal":[{"JournalID":93,"JournalTitle":"Biochemical Genetics (BIGI)","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null},{"JournalID":58,"JournalTitle":"BMC Anesthesiology","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null}],"TitleMaster":[{"ID":36,"MScriptID":"121 ","Name":"A set of four simple performance measures reflecting adherence to guidelines predicts hospitalization: A claims-based cohort study of patients with diabetes","IsActive":true,"ModifiedDate":null,"CreatedBy":"narw01"}],"AreaOfExpReviewerlink":[{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004},{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004},{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004}]}
+55 2016.08.05 12:21:03:7849 1812 GetReviewerDetails > method execution start for reviewerID :57004StartTime :05/08/2016 12:21:03
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 12:21:03
+
+56 2016.08.05 12:21:03:7949 0 Info: Method Name - LoadProfileData : ReviewerId-57004
+57 2016.08.05 12:21:04:3369 535 Info : Method Name - GetJournal : term-& Journal count93
+58 2016.08.05 12:21:04:8350 443 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+59 2016.08.05 12:21:23:6359 18794 spSaveUpdateReviewerDetails execution start
+this are sqlParameters we are passing to store procedures -> InitialsLastNameFirstNameMiddleNameNameReviewerIdInstituteIDDeptIdStreetNameCityIDNoOfPublicationsUserID
+spSaveUpdateReviewerDetails execution end
+
+60 2016.08.05 12:21:23:6709 25 DeleteReviewerMailByReviewerId execution start for reviewerId :57004
+DeleteReviewerMailByReviewerId execution end for reviewerId :57004
+
+61 2016.08.05 12:21:23:7219 42 DeleteReferenceLinkByReviewerId execution start for reviewerId :57004
+DeleteReferenceLinkByReviewerId execution end for reviewerId :57004
+
+62 2016.08.05 12:21:23:7739 45 DeleteJournalByReviewerId execution start for reviewerId :57004
+DeleteJournalByReviewerId execution end for reviewerId :57004
+
+63 2016.08.05 12:21:23:9169 137 UpdateAreaOfExpReviewerlink execution start for ReviewerMasterID :57004
+UpdateAreaOfExpReviewerlink execution end for ReviewerMasterID :57004
+
+64 2016.08.05 12:21:24:1179 194 DeleteTitleReviewerByReviewerId execution start for reviewerId :57004
+DeleteTitleReviewerByReviewerId execution end for reviewerId :57004
+
+65 2016.08.05 12:21:24:1579 29 Info : Method Name - SaveReviewerProfile : reviewerId57004Profile{"ReviewerID":57004,"Initials":"Prof.","FirstName":"Sandip","LastName":"Deshpande","MiddleName":"","NoOfPublication":2,"ReviewerName":null,"StreetName":"Main Street","InstituteID":5749,"DeptID":212,"InstituteName":"Santa Clara University","DepartmentName":"Computer Science and Engineering","CityId":56967,"City":"Santa Clara","StateId":56848,"State":"California","CountryID":56804,"Country":"USA","TitleMasterID":null,"CreatedBy":"apn6520","ReviewerEmails":[{"ID":57121,"ReviewerMasterID":57004,"Email":"san@abc.com","IsActive":true,"ModifiedDate":null}],"ReferenceLink":[{"ID":137978,"ReferenceLink":"abc.com","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null}],"Journal":[{"JournalID":58,"JournalTitle":"BMC Anesthesiology\r\n","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null},{"JournalID":93,"JournalTitle":"Biochemical Genetics (BIGI)","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null},{"JournalID":9,"JournalTitle":"Abdominal Imaging (AIMA)","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null},{"JournalID":26,"JournalTitle":"BMC Biotechnology","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null}],"TitleMaster":[{"ID":36,"MScriptID":"121 ","Name":"A set of four simple performance measures reflecting adherence to guidelines predicts hospitalization: A claims-based cohort study of patients with diabetes","IsActive":true,"ModifiedDate":null,"CreatedBy":"narw01"}],"AreaOfExpReviewerlink":[{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004},{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004},{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004}]}
+66 2016.08.05 12:21:26:1711 2001 GetReviewerDetails > method execution start for reviewerID :57004StartTime :05/08/2016 12:21:26
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 12:21:26
+
+67 2016.08.05 12:21:26:1891 1 Info: Method Name - LoadProfileData : ReviewerId-57004
+68 2016.08.05 12:21:26:3391 132 Info : Method Name - GetJournal : term-& Journal count93
+69 2016.08.05 12:21:26:8172 456 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+70 2016.08.05 12:23:26:3741 119529 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+71 2016.08.05 12:23:26:9762 587 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+72 2016.08.05 12:23:26:9882 1 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+73 2016.08.05 12:23:26:9982 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+74 2016.08.05 12:25:46:6011 139583 Info : Method Name - GetJournal : term-& Journal count93
+75 2016.08.05 12:25:47:1352 523 Info : Method Name - GetJournal : term-& Journal count93
+76 2016.08.05 12:25:48:0453 882 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+77 2016.08.05 12:25:48:5163 465 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+78 2016.08.05 12:25:48:5223 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+79 2016.08.05 12:25:48:5283 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+80 2016.08.05 12:26:19:0294 30494 GetReviewerDetails > method execution start for reviewerID :57004StartTime :05/08/2016 12:26:18
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 12:26:19
+
+81 2016.08.05 12:26:19:0384 0 Info: Method Name - LoadProfileData : ReviewerId-57004
+82 2016.08.05 12:26:19:5524 505 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+83 2016.08.05 12:26:20:0695 506 Info : Method Name - GetJournal : term-& Journal count93
+84 2016.08.05 12:26:42:7988 22723 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+85 2016.08.05 12:26:43:8829 1070 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+86 2016.08.05 12:26:43:9009 1 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+87 2016.08.05 12:26:43:9129 1 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+88 2016.08.05 12:33:22:5698 398621 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+89 2016.08.05 12:33:23:4908 907 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+90 2016.08.05 12:33:23:5008 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+91 2016.08.05 12:33:23:5118 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+92 2016.08.05 12:33:26:1778 2655 GetReviewerDetails > method execution start for reviewerID :57004StartTime :05/08/2016 12:33:26
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 12:33:26
+
+93 2016.08.05 12:33:26:1958 1 Info: Method Name - LoadProfileData : ReviewerId-57004
+94 2016.08.05 12:33:26:7318 526 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+95 2016.08.05 12:33:27:2388 496 Info : Method Name - GetJournal : term-& Journal count93
+96 2016.08.05 12:34:18:2708 51026 Info : Method Name - GetJournal : term-& Journal count93
+97 2016.08.05 12:34:18:7928 513 Info : Method Name - GetJournal : term-& Journal count93
+98 2016.08.05 12:34:19:5748 774 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+99 2016.08.05 12:34:20:0568 473 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+100 2016.08.05 12:34:20:0668 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+101 2016.08.05 12:34:20:0768 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+102 2016.08.05 12:38:12:1128 232038 spSaveUpdateReviewerDetails execution start
+this are sqlParameters we are passing to store procedures -> InitialsLastNameFirstNameMiddleNameNameReviewerIdInstituteIDDeptIdStreetNameCityIDNoOfPublicationsUserID
+spSaveUpdateReviewerDetails execution end
+
+103 2016.08.05 12:38:12:1588 34 DeleteReviewerMailByReviewerId execution start for reviewerId :57004
+DeleteReviewerMailByReviewerId execution end for reviewerId :57004
+
+104 2016.08.05 12:38:12:2678 96 DeleteReferenceLinkByReviewerId execution start for reviewerId :57004
+DeleteReferenceLinkByReviewerId execution end for reviewerId :57004
+
+105 2016.08.05 12:38:12:4148 129 DeleteJournalByReviewerId execution start for reviewerId :57004
+DeleteJournalByReviewerId execution end for reviewerId :57004
+
+106 2016.08.05 12:38:12:5268 101 UpdateAreaOfExpReviewerlink execution start for ReviewerMasterID :57004
+UpdateAreaOfExpReviewerlink execution end for ReviewerMasterID :57004
+
+107 2016.08.05 12:38:12:8988 361 DeleteTitleReviewerByReviewerId execution start for reviewerId :57004
+DeleteTitleReviewerByReviewerId execution end for reviewerId :57004
+
+108 2016.08.05 12:38:12:9718 63 Info : Method Name - SaveReviewerProfile : reviewerId57004Profile{"ReviewerID":57004,"Initials":"Prof.","FirstName":"Sandip","LastName":"Deshpande","MiddleName":"","NoOfPublication":2,"ReviewerName":null,"StreetName":"Main Street","InstituteID":5749,"DeptID":212,"InstituteName":"Santa Clara University","DepartmentName":"Computer Science and Engineering","CityId":56967,"City":"Santa Clara","StateId":56848,"State":"California","CountryID":56804,"Country":"USA","TitleMasterID":null,"CreatedBy":"apn6520","ReviewerEmails":[{"ID":57122,"ReviewerMasterID":57004,"Email":"san@abc.com","IsActive":true,"ModifiedDate":null}],"ReferenceLink":[{"ID":137979,"ReferenceLink":"abc.com","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null}],"Journal":[{"JournalID":26,"JournalTitle":"BMC Biotechnology\r\n","ReviewerMasterID":57004,"IsActive":false,"ModifiedDate":null},{"JournalID":9,"JournalTitle":"Abdominal Imaging (AIMA)","ReviewerMasterID":57004,"IsActive":true,"ModifiedDate":null},{"JournalID":93,"JournalTitle":"Biochemical Genetics (BIGI)","ReviewerMasterID":57004,"IsActive":false,"ModifiedDate":null},{"JournalID":58,"JournalTitle":"BMC Anesthesiology\r\n","ReviewerMasterID":57004,"IsActive":false,"ModifiedDate":null}],"TitleMaster":[{"ID":36,"MScriptID":"121 ","Name":"A set of four simple performance measures reflecting adherence to guidelines predicts hospitalization: A claims-based cohort study of patients with diabetes","IsActive":true,"ModifiedDate":null,"CreatedBy":"narw01"}],"AreaOfExpReviewerlink":[{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004},{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004},{"PrimaryExp":"Engineering","FExpertiseLevel":0,"PID":93669,"SecondaryExp":"Power engineering","SExpertiseLevel":1,"SID":93871,"TertiaryExp":"Effective utilization of electric energy (Power engineering)","TExpertiseLevel":2,"TID":93876,"IsActive":true,"ReviewerMasterID":57004}]}
+109 2016.08.05 12:38:15:2088 2226 GetReviewerDetails > method execution start for reviewerID :57004StartTime :05/08/2016 12:38:15
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 12:38:15
+
+110 2016.08.05 12:38:15:2218 0 Info: Method Name - LoadProfileData : ReviewerId-57004
+111 2016.08.05 12:38:15:3158 82 Info : Method Name - GetJournal : term-& Journal count93
+112 2016.08.05 12:38:15:7978 472 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+113 2016.08.05 12:38:23:1748 7369 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+114 2016.08.05 12:38:23:7488 563 Info : Method Name - GetJournal : term-& Journal count93
+115 2016.08.05 12:38:33:0038 9246 Info : Method Name - AutoCompleteInstitute : term-indi& institute count222
+116 2016.08.05 12:38:35:8758 2864 Info : Method Name - AutoCompleteDepartment : term-de& Department count6774
+117 2016.08.05 12:38:40:3568 4459 Info : Method Name - AutoCompleteDepartment : term-?Department of Medicine, Division of Infectious Diseasesp& Department count0
+118 2016.08.05 12:38:40:8478 478 Info : Method Name - AutoCompleteDepartment : term-?Department of Medicine, Division of Infectious Diseasesp& Department count0
+119 2016.08.05 12:38:44:1368 3273 Info : Method Name - AutoCompleteDepartment : term-india& Department count0
+120 2016.08.05 12:38:44:7428 599 Info : Method Name - AutoCompleteDepartment : term-india& Department count0
+121 2016.08.05 12:38:46:2608 1512 Info : Method Name - AutoCompleteDepartment : term-india\\\& Department count0
+122 2016.08.05 12:38:47:3508 1085 Info : Method Name - AutoCompleteDepartment : term-ind& Department count49
+123 2016.08.05 12:38:52:7998 5439 Info: Method Name - AutoCompleteCountry: term-inicountry count5
+124 2016.08.05 12:38:53:6308 816 Info: Method Name - AutoCompleteCountry: term-incountry count38
+125 2016.08.05 12:38:54:4538 811 Info: Method Name - AutoCompleteCountry: term-indicountry count2
+126 2016.08.05 12:38:57:5068 3039 Info : Method Name - AutoCompleteState : term-mparentPrefix : 31& state count0
+127 2016.08.05 12:38:58:8978 1379 Info : Method Name - AutoCompleteState : term-aparentPrefix : 31& state count1
+128 2016.08.05 12:39:08:5098 9592 Info : Method Name - AutoCompleteCity : term-aparentPrefix : 786& city count0
+129 2016.08.05 12:39:13:0118 4490 Info: Method Name - AutoCompleteCountry: term-indicountry count2
+130 2016.08.05 12:39:22:9188 9896 Info : Method Name - AutoCompleteState : term-mahparentPrefix : 101& state count1
+131 2016.08.05 12:39:26:0868 3156 Info : Method Name - AutoCompleteCity : term-punparentPrefix : 268& city count2
+132 2016.08.05 12:39:31:4928 5395 Info : Method Name - GetJournal : term-& Journal count93
+133 2016.08.05 12:39:32:1588 654 Info : Method Name - VerifyEmailAddress : email: aaa@aaaa.com
+134 2016.08.05 12:39:41:6908 9523 Info : Method Name - GetSecondaryExpertise : SecondaryExpertise count4
+135 2016.08.05 12:39:43:4138 1712 Info : Method Name - GetTertiaryExpertise : tertiaryExperties count9
+136 2016.08.05 12:39:55:8308 12408 Info : Method Name - AutoCompleteManuscriptTitle : term-and & titel count6207
+137 2016.08.05 12:40:00:3208 4481 Info : Method Name - AutoCompleteManuscriptTitle : term-and are& titel count1
+138 2016.08.05 12:40:09:1458 8819 spSaveUpdateReviewerDetails execution start
+this are sqlParameters we are passing to store procedures -> InitialsLastNameFirstNameMiddleNameNameReviewerIdInstituteIDDeptIdStreetNameCityIDNoOfPublicationsUserID
+spSaveUpdateReviewerDetails execution end
+
+139 2016.08.05 12:40:09:1668 8 DeleteReviewerMailByReviewerId execution start for reviewerId :57005
+DeleteReviewerMailByReviewerId execution end for reviewerId :57005
+
+140 2016.08.05 12:40:09:2258 43 DeleteReferenceLinkByReviewerId execution start for reviewerId :57005
+DeleteReferenceLinkByReviewerId execution end for reviewerId :57005
+
+141 2016.08.05 12:40:09:2768 37 DeleteJournalByReviewerId execution start for reviewerId :57005
+DeleteJournalByReviewerId execution end for reviewerId :57005
+
+142 2016.08.05 12:40:09:3578 68 UpdateAreaOfExpReviewerlink execution start for ReviewerMasterID :57005
+UpdateAreaOfExpReviewerlink execution end for ReviewerMasterID :57005
+
+143 2016.08.05 12:40:09:6858 312 DeleteTitleReviewerByReviewerId execution start for reviewerId :57005
+DeleteTitleReviewerByReviewerId execution end for reviewerId :57005
+
+144 2016.08.05 12:40:09:9098 212 Info : Method Name - SaveReviewerProfile : reviewerId57005Profile{"ReviewerID":0,"Initials":"Prof.","FirstName":"k","LastName":"jay","MiddleName":"m","NoOfPublication":2,"ReviewerName":null,"StreetName":"mm","InstituteID":26,"DeptID":363,"InstituteName":"University of Indianapolis, Krannert School of Physical Therapy","DepartmentName":"Departamento de Ingeniería Industrial","CityId":11990,"City":"Pune","StateId":268,"State":"Maharashtra","CountryID":101,"Country":"India","TitleMasterID":null,"CreatedBy":"apn6520","ReviewerEmails":[{"ID":0,"ReviewerMasterID":0,"Email":"aaa@aaaa.com","IsActive":true,"ModifiedDate":null}],"ReferenceLink":[{"ID":0,"ReferenceLink":"crest.in","ReviewerMasterID":0,"IsActive":true,"ModifiedDate":null}],"Journal":[{"JournalID":9,"JournalTitle":"Abdominal Imaging (AIMA)","ReviewerMasterID":0,"IsActive":true,"ModifiedDate":null}],"TitleMaster":[{"ID":7500,"MScriptID":"TRR567","Name":"Type VI secretion systems of human gut Bacteroidales segregate into three genetic architectures and are contained on mobile genetic elements","IsActive":true,"ModifiedDate":null,"CreatedBy":"apn6520"}],"AreaOfExpReviewerlink":[{"PrimaryExp":null,"FExpertiseLevel":null,"PID":91538,"SecondaryExp":null,"SExpertiseLevel":null,"SID":91539,"TertiaryExp":null,"TExpertiseLevel":null,"TID":91545,"IsActive":true,"ReviewerMasterID":57005}]}
+145 2016.08.05 12:40:12:5598 2634 GetReviewerDetails > method execution start for reviewerID :57005StartTime :05/08/2016 12:40:12
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 12:40:12
+
+146 2016.08.05 12:40:12:5718 0 Info: Method Name - LoadProfileData : ReviewerId-57005
+147 2016.08.05 12:40:13:1078 522 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+148 2016.08.05 12:40:13:5898 473 Info : Method Name - GetJournal : term-& Journal count93
+149 2016.08.05 12:48:41:3190 507723 GetReviewerDetails > method execution start for reviewerID :57005StartTime :05/08/2016 12:48:41
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 12:48:41
+
+150 2016.08.05 12:48:41:3280 0 Info: Method Name - LoadProfileData : ReviewerId-57005
+151 2016.08.05 12:48:41:8610 526 Info : Method Name - GetJournal : term-& Journal count93
+152 2016.08.05 12:48:42:3410 454 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+153 2016.08.05 12:52:57:7570 255363 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+154 2016.08.05 12:53:00:5761 2790 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+155 2016.08.05 12:53:00:5861 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+156 2016.08.05 12:53:00:5961 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+157 2016.08.05 12:53:41:1158 40522 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+158 2016.08.05 12:53:41:7549 617 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+159 2016.08.05 12:53:41:7679 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+160 2016.08.05 12:53:41:7799 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+161 2016.08.05 13:00:36:1292 414311 INFO: UserId-apn6520 open reviewer profile.
+162 2016.08.05 13:00:38:9325 2782 GetReviewerDetails > method execution start for reviewerID :57005StartTime :05/08/2016 13:00:38
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :05/08/2016 13:00:38
+
+163 2016.08.05 13:00:38:9445 0 Info: Method Name - LoadProfileData : ReviewerId-57005
+164 2016.08.05 13:00:39:3105 357 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+165 2016.08.05 13:00:39:7445 428 Info : Method Name - GetJournal : term-& Journal count93
+166 2016.08.05 13:05:03:3817 263616 Info : Method Name - GetJournal : term-& Journal count93
+167 2016.08.05 13:05:03:4467 55 Info : Method Name - GetJournal : term-& Journal count93
+168 2016.08.05 14:17:51:6587 4368157 INFO: UserId-apn6520open reviewer index Search.
+169 2016.08.05 14:17:52:9867 1314 Info : Method Name - GetJournal : term-& Journal count93
+170 2016.08.05 14:17:53:8287 833 Info : Method Name - GetJournal : term-& Journal count93
+171 2016.08.05 14:17:54:4967 659 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+172 2016.08.05 14:17:57:6177 3108 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+173 2016.08.05 14:17:57:6277 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+174 2016.08.05 14:17:57:6367 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75

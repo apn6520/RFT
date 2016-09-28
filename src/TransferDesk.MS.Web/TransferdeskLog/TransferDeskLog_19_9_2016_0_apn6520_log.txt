@@ -1,0 +1,223 @@
+2 2016.09.19 14:44:23:2856 133531 INFO: UserId-apn6520open reviewer index Search.
+3 2016.09.19 14:44:33:1499 9857 Info : Method Name - GetJournal : term-& Journal count96
+4 2016.09.19 14:44:34:3099 1158 Info : Method Name - GetJournal : term-& Journal count96
+2 2016.09.19 15:13:27:7653 1285476 Info : Method Name - GetJournal : term-& Journal count96
+3 2016.09.19 15:13:27:7743 1 Info : Method Name - GetJournal : term-& Journal count96
+4 2016.09.19 15:13:45:0275 17244 INFO: UserId-apn6520open reviewer index Search.
+5 2016.09.19 15:13:47:8806 2844 Info : Method Name - GetJournal : term-& Journal count96
+6 2016.09.19 15:13:48:8977 1008 Info : Method Name - GetJournal : term-& Journal count96
+7 2016.09.19 15:14:39:7271 50825 Info : Method Name - GetJournal : term-& Journal count96
+8 2016.09.19 15:14:41:2661 1534 Info : Method Name - GetJournal : term-& Journal count96
+9 2016.09.19 15:15:18:8124 37533 Info : Method Name - GetJournal : term-& Journal count96
+10 2016.09.19 15:15:20:3474 1531 Info : Method Name - GetJournal : term-& Journal count96
+11 2016.09.19 15:24:46:7122 566342 Info : Method Name - GetJournal : term-& Journal count96
+12 2016.09.19 15:24:47:1902 477 Info : Method Name - GetJournal : term-& Journal count96
+2 2016.09.19 15:57:19:4715 1608085 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+3 2016.09.19 15:57:21:7526 2274 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+4 2016.09.19 15:57:21:7646 6 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+5 2016.09.19 15:57:21:7876 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+6 2016.09.19 15:58:17:0612 55280 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+7 2016.09.19 15:58:17:7893 672 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+8 2016.09.19 15:58:17:7953 1 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+9 2016.09.19 15:58:17:8043 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+10 2016.09.19 15:59:17:9320 60116 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+11 2016.09.19 15:59:18:5390 578 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+12 2016.09.19 15:59:18:5390 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+13 2016.09.19 15:59:18:5400 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+2 2016.09.19 16:00:45:5247 11434 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+3 2016.09.19 16:00:46:3978 865 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+4 2016.09.19 16:00:46:4078 6 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+5 2016.09.19 16:00:46:4178 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+6 2016.09.19 16:01:56:6637 70248 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+7 2016.09.19 16:01:57:3927 714 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+8 2016.09.19 16:01:57:4317 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+9 2016.09.19 16:01:57:4417 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+10 2016.09.19 16:19:08:3320 1030882 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+11 2016.09.19 16:19:08:9341 592 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+12 2016.09.19 16:19:08:9566 1 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+13 2016.09.19 16:19:08:9766 1 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+14 2016.09.19 16:21:10:4776 121502 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+15 2016.09.19 16:21:11:0826 586 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+16 2016.09.19 16:21:11:0926 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+17 2016.09.19 16:21:11:1026 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+18 2016.09.19 17:23:25:0382 3733334 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+19 2016.09.19 17:23:25:7442 685 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+20 2016.09.19 17:23:25:7517 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+21 2016.09.19 17:23:25:7592 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+22 2016.09.19 17:28:18:7419 292731 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+23 2016.09.19 17:28:19:5993 834 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+24 2016.09.19 17:28:19:6018 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+25 2016.09.19 17:28:19:6068 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+26 2016.09.19 17:29:05:3965 45760 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+27 2016.09.19 17:29:06:1288 700 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+28 2016.09.19 17:29:06:1488 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+29 2016.09.19 17:29:06:1588 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+30 2016.09.19 17:32:38:0690 211846 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+31 2016.09.19 17:32:38:7391 657 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+32 2016.09.19 17:32:38:7491 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+33 2016.09.19 17:32:38:7741 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+34 2016.09.19 17:34:45:3095 126515 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+35 2016.09.19 17:34:46:0572 728 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+36 2016.09.19 17:34:46:0647 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+37 2016.09.19 17:34:46:0747 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+38 2016.09.19 17:35:18:0225 31929 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+39 2016.09.19 17:35:18:8347 789 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+40 2016.09.19 17:35:18:8447 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+41 2016.09.19 17:35:18:8547 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+42 2016.09.19 17:36:16:5621 57708 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+43 2016.09.19 17:36:17:2122 620 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+44 2016.09.19 17:36:17:2222 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+45 2016.09.19 17:36:17:2322 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+46 2016.09.19 17:37:55:7422 98495 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+47 2016.09.19 17:37:56:7472 986 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+48 2016.09.19 17:37:56:7572 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+49 2016.09.19 17:37:56:7672 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+50 2016.09.19 17:38:13:5763 16811 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+51 2016.09.19 17:38:14:5089 905 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+52 2016.09.19 17:38:14:5189 1 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+53 2016.09.19 17:38:14:5289 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+2 2016.09.19 17:39:08:1025 10297 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+3 2016.09.19 17:39:08:6526 544 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+4 2016.09.19 17:39:08:6626 3 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+5 2016.09.19 17:39:08:6726 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+6 2016.09.19 17:39:23:6416 14975 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+7 2016.09.19 17:39:24:3666 696 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+8 2016.09.19 17:39:24:3866 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+9 2016.09.19 17:39:24:4166 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+10 2016.09.19 17:45:22:4899 358047 INFO: UserId-apn6520open reviewer index Search.
+11 2016.09.19 17:45:27:7721 5254 Info : Method Name - GetJournal : term-& Journal count96
+12 2016.09.19 17:45:28:8022 1024 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+13 2016.09.19 17:45:29:6297 797 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+14 2016.09.19 17:45:29:6397 0 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: AND, SearchOneVal: tm.Name, SearchTwoVal: vwe.AreaOfExpertiseMin Value: 0Max Value: 999Total Result Count: 20
+15 2016.09.19 17:45:29:6422 1 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+16 2016.09.19 17:45:30:1697 515 Info : Method Name - GetJournal : term-& Journal count96
+17 2016.09.19 17:45:35:7934 5619 GetReviewerDetails > method execution start for reviewerID :57006StartTime :19/09/2016 17:45:34
+GetReviewerDetails > Create a SQL command to execute the StoredProcedure
+GetReviewerDetails > reviewerIndexDBContextRead Database connection open.
+GetReviewerDetails > start to read 'spGetReviewerDetails_Result' result set.
+GetReviewerDetails > start to read 'ReviewerEmails_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpertise_Result' result set.
+GetReviewerDetails > start to read 'ReferenceLink_Result' result set.
+GetReviewerDetails > start to read 'Journal_Result' result set.
+GetReviewerDetails > start to read 'TitleReviewerlinkMaster_Result' result set.
+GetReviewerDetails > start to read 'TitleAndAffillationMaster_Result' result set.
+GetReviewerDetails > start to read 'AreaOfExpReviewerlink_Result' result set.
+GetReviewerDetails > end execution process of GetReviewerDetails. EndTime :19/09/2016 17:45:35
+
+18 2016.09.19 17:45:35:8034 1 Info: Method Name - LoadProfileData : ReviewerId-57006
+19 2016.09.19 17:45:36:3080 495 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+20 2016.09.19 17:45:36:5855 256 Info : Method Name - GetJournal : term-& Journal count96

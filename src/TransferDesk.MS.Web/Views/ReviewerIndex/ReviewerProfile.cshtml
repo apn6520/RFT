@@ -1,0 +1,404 @@
+﻿
+@{
+    ViewBag.Title = "ReviewerProfile";
+    Layout = "~/Views/Shared/_ReviewerIndexLayout.cshtml";
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="../Scripts/jsrender.js" type="text/javascript"></script>
+<script src="~/Scripts/ExternalScript/multiple-emails.js"></script>
+<link href="~/Content/multiple-emails.css" rel="stylesheet" />
+<link href="~/Content/ReviewerIndex.css" rel="stylesheet" />
+<script src="~/Scripts/CustomeScript/ReviewerProfile.js"></script>
+<script src="~/Scripts/jquery-ui-1.11.4.js"></script>
+<link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+<br />
+
+<script id="ReferenceGridTemplate" type="text/x-jsrender">
+    <li id="{{:ID}}_li" class="multiple_emails-email">
+        <a href="#" onclick="removeRefTableRow(id)" id="{{:ID}}" class="multiple_emails-close" title="Remove"><img title="Remove" src="../Images/DeleteRed.png" style="width:20px; height:20px;"></a>
+        <a href="{{:ReferenceLink}}" id="{{:ID}}" target="_blank" class="email_name" style="overflow-wrap:break-word">{{:ReferenceLink}}</a>
+    </li>
+</script>
+<script id="JournalTemplate" type="text/x-jsrender">
+    <li id="{{:JournalID}}_li" class="multiple_emails-email">
+        <a href="#" onclick="removeRefTableRow(id); return false;" id="{{:JournalID}}" class="multiple_emails-close" title="Remove"><img title="Remove" src="../Images/DeleteRed.png" style="width:20px; height:20px;"></a>
+        <span id="{{:JournalID}}" class="email_name">{{:JournalTitle}}</span>
+    </li>
+</script>
+<script id="ExpertGridTemplate" type="text/x-jsrender">
+    <tr id="{{:PID}}_tr">
+        <td id="{{:PID}}">
+            {{:PrimaryExp}}
+        </td>
+        <td id="{{:SID}}">
+            {{:SecondaryExp}}
+        </td>
+        <td id="{{:TID}}">
+            {{:TertiaryExp}}
+        </td>
+        <td>
+            <a href="#" onclick="removeTableRow(id)" id="{{:PID}}" class="multiple_emails-close" title="Remove this row">
+                <img title="Remove this row" src="../Images/DeleteRed.png" style="width:20px; height:20px; margin-left:25%" id="{{:PID}}" onclick="removeTableRow(id)">
+            </a>            
+        </td>
+    </tr>
+</script>
+<script id="ManuScriptDetailsTemplate" type="text/x-jsrender">
+    <tr id="{{:ID}}_ManuScript_tr" ondblclick="EditManuScriptDetails(this)" style="border: 1px #BBD8FB solid;">
+        <td style="width: 96%; text-align: left; padding: 4px; border: 1px solid #ddd; border-right:hidden">  
+            <span id="{{:ID}}" title="Manuscript Title" style="color: #428bca; ">{{:MScriptID}}</span> |         
+            <span id="{{:ID}}" title="Manuscript Title" style="color: #428bca; display: inline; overflow-wrap:break-word">{{:Name}}</span>
+        </td>
+        <td style="width: 4%; text-align: left; padding: 4px; border: 1px solid #ddd; ">
+            <a href="#" onclick="removeManuScriptTableRow(id)" id="{{:ID}}" class="multiple_emails-close" title="Remove this row">
+                <img title="Remove this row" src="../Images/DeleteRed.png" style="width: 20px; height: 20px; margin-left: 25%;" id="{{:ID}}" onclick="removeManuScriptTableRow(id)">
+            </a>  
+       </td>
+    </tr>
+</script>
+<div id="loading" class='profileloaderClass'>
+    <img src="../Images/loading.gif" alt="" id="loaderImg" style="height:50px; background-position:center" />
+</div>  
+<div id="ReviewerViewBagData" style="display:none">@ViewBag.ReviewerId</div> 
+<div id="ProfileViewDiv">
+    <br />
+    @*<div>       
+        <h1 style="font-size: 18px; padding-left: 5px; color: #192F5A; text-align: left; float: left;">Reviewer Details</h1>     
+        <hr style="clear:both;" />
+    </div>*@
+    <table class="auto-style1">
+        <tr>
+           <th colspan="4">Reviewer Information</th>          
+       </tr>
+        <tr>
+            <td style="width: 10%;">
+                <div style="padding-top:8px;">
+                    <span style="width:20%">Title</span>&nbsp;
+                    <select id="ddlInitials" style="width:60%;">
+                        <option selected="selected" value="Prof.">Prof.</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Dr.">Dr.</option>
+                    </select>  
+                </div>
+            </td>
+            <td style="width: 30%;">
+                <div style="padding-top:8px;">
+                    <span style="width:10%">Last Name<span style="color:red">*</span>&nbsp;</span>&nbsp;
+                    <input style="width:75%" value="" placeholder="Last Name" type="text" maxlength="100" id="txtLastName" />
+                </div>
+            </td>
+            <td style="width: 30%;">
+                <div style="padding-top:8px;">
+                    <span style="width:10%">First Name<span style="color:red">*</span>&nbsp;</span>&nbsp;
+                    <input style="width:75%" value="" placeholder="First Name" type="text" maxlength="100" id="txtFirstName" />
+                </div>
+            </td>
+            <td style="width: 30%;">
+                <div style="padding-top:8px;">
+                    <span style="width:10%">Middle  Name</span>&nbsp;
+                    <input style="width:75%" type="text" placeholder="Middle  Name" maxlength="100" id="txtMiddleName" />
+                </div>
+            </td>
+        </tr>       
+        <tr>
+            <td colspan="4" id="errorReviewerInfo" style="color:red; font-size:small;display:none">First Name is mandatory</td>
+        </tr>
+    </table>    
+    <table class="auto-style1">
+        <tr>
+            <th colspan="6">Affiliation</th>
+        </tr>
+        <tr>          
+            <td style="width: 4%;">
+                <div style="padding-top: 8px; text-align: right">                    
+                    <span style="width:10%">Institute<span style="color:red">*</span>&nbsp;</span>&nbsp;                    
+                </div>
+            </td>
+            <td style="width: 25%;">
+                <div style="padding-top:8px;">
+                    <input type="hidden" id="txtAffiliationId" value="" />
+                    <input type="text" id="txtAffiliation" title="Institute Name" maxlength="500" placeholder="Institute Name" style="width:100%;" class="ui-autocomplete-input" autocomplete="off">                                       
+                </div>
+            </td>
+            <td style="width: 8%;">
+                <div style="padding-top: 8px; text-align: right">
+                    <span style="width:10%">Department<span style="color:red">*</span>&nbsp;</span>&nbsp;
+                </div>
+            </td>
+            <td style="width: 25%;">
+                <div style="padding-top:8px;">
+                    <input type="hidden" id="txtDepartmentId" value="" />
+                    <input type="text" id="txtDepartmentName" maxlength="500" title="Department Name" placeholder="Department Name" style="width:100%;" class="ui-autocomplete-input" autocomplete="off">
+                </div>
+            </td>
+            <td style="width: 8%;">
+                <div style="padding-top: 8px; text-align: right">
+                    <span style="width:10%">Street</span>&nbsp;
+                 </div>
+            </td>
+            <td style="width: 25%;">
+                <div style="padding-top:8px;">                    
+                    <input type="text" id="txtStreetName" title="Street Name" maxlength="100" placeholder="Street Name" style="width:100%;" class="ui-autocomplete-input" autocomplete="off">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 4%;">
+                <div style="padding-top: 8px; text-align: right">
+                    <span style="width:10%">Country<span style="color:red">*</span>&nbsp;</span>&nbsp;                    
+                </div>
+            </td>
+            <td style="width: 25%;">
+                <div style="padding-top:8px;">
+                    <input type="hidden" id="txtCountryId" value=""/>
+                    <input type="text" id="txtCountry" maxlength="100" title="Country Name" placeholder="Country Name" style="width:100%;" class="ui-autocomplete-input" autocomplete="off">                
+                </div>
+            </td>
+            <td style="width: 8%;">
+                <div style="padding-top: 8px; text-align: right">
+                    <span style="width:10%">State<span style="color:red">*</span>&nbsp;</span>&nbsp;                    
+                </div>
+            </td>
+            <td style="width: 25%;">
+                <div style="padding-top:8px;">
+                    <input type="hidden" id="txtStateId" value="" />
+                    <input type="text" id="txtState" title="State Name" maxlength="100" placeholder="State Name" style="width:100%;" class="ui-autocomplete-input" autocomplete="off">
+                </div>
+            </td>
+            <td style="width: 8%;">
+                <div style="padding-top:8px; text-align:right">
+                    <span style="width:10%">City<span style="color:red">*</span>&nbsp;</span>&nbsp;                    
+                </div>
+            </td>
+            <td style="width: 25%;">
+                <div style="padding-top:8px;">
+                    <input type="hidden" id="txtCityId" value=""/>
+                    <input type="text" id="txtCity" maxlength="100" title="City Name" placeholder="City Name" style="width:100%;" class="ui-autocomplete-input" autocomplete="off">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" id="errorAffiliation" style="color: red; font-size: small;display:none">First Name is mandatory</td>
+        </tr>
+    </table>
+    <table class="auto-style1">
+        <tr>
+            <th>E-Mail Addresses<span style="color:red">*</span></th>
+            <th>Journal Name<span style="color:red">*</span></th>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 50%;">              
+                <div style="width:85%;padding-top:8px">  
+                    <input type='text' id='txtEmailAddress' placeholder="Enter your email" name='txtEmailAddress' class='form-control' value=''>                                  
+                    <pre id='current_emails' style="display:none"></pre>   
+                </div>
+            </td>
+            <td style="width: 50%;">
+                <div style="padding-top:8px;">    
+                    <input type="text" placeholder="Journal Search" id="txtJournalSearch" style="width:100%;" />                
+                    <select id="ddlJournalName" multiple style="width:100%;"> 
+                    </select>                    
+                </div>
+            </td>           
+        </tr>
+        <tr>           
+            <td style="width: 50%;">
+                <div style="padding-top:8px; width:100%">
+                    <div class="multiple_emails-container">
+                        <ul id="JournalNameUL" class="multiple_emails-ul"></ul>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4"id="errorEmailId" style="color: red; font-size: small; display: none">First Name is mandatory</td>
+        </tr>
+    </table>
+    <table style="table-layout: fixed;">
+        <tr>
+            <th>Reference link<span style="color:red">*</span></th>
+            <th>Number Of Relevant Publications<span style="color:red">*</span></th>
+        </tr>
+        <tr>
+            <td rowspan="2" style="width: 50%; overflow: hidden;">
+                <div style="padding-top:8px; width:85%">
+                    <div id="referenceLinkDiv" class="multiple_emails-container">
+                        <ul id="referenceUL" class="multiple_emails-ul"></ul>
+                        <input type="text" placeholder="Enter your reference link" id="RefLink" class="multiple_emails-input text-left" />
+                    </div>
+                </div>
+            </td>
+            <td style="width: 50%;">
+                <div style="padding-top:8px;">
+                    <input type="text" id="txtNumberofrelevantpublications" maxlength="3" title="Number Of Relevant Publications" placeholder="Number Of Relevant Publications" style="width:68%;" class="ui-autocomplete-input" autocomplete="off">
+                </div>
+            </td>
+        </tr>
+        <tr>            
+            <td style="width: 50%;">
+                <div style="padding-top:8px;">                  
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" id="errorRefrenceLink" style="color: red; font-size: small; display: none">First Name is mandatory</td>
+        </tr>
+    </table>
+    <table class="auto-style1">
+        <tr>
+            <th colspan="4">Area Of Expertise<span style="color:red">*</span></th>
+        </tr>
+        <tr>
+            <td style="width: 32%;">
+                <div style="padding-top:8px;">
+                    <select name="ddlPrimary" onchange="ddlPrimaryChange(this)" id="ddlPrimary" style="width:99%;">                          
+                    </select>
+                </div>
+            </td>
+            <td style="width: 32%;">
+                <div style="padding-top:8px;">
+                    <select name="dlSecondary" onchange="ddlSecondaryChange(this)" id="ddlSecondary" style="width:99%;">
+                        <option selected="selected" value="--Select Secondary--">--Select Secondary--</option>     
+                    </select>
+                </div>
+            </td>
+            <td style="width: 32%;">
+                <div style="padding-top:8px;">
+                    <select name="ddlTertiary" id="ddlTertiary" style="width:99%;">
+                        <option selected="selected" value="--Select Tertiary--">--Select Tertiary--</option>                       
+                    </select>
+                </div>
+            </td>
+            <td style="width: 3%;">
+                <div style="padding-top:5px;">
+                    <button type="submit" style="background-color:rgba(255,255,255,0.0);  border:none;" id="btnAddManuScriptDetails" onclick="AddExpertiseInToTable();"><img src="../Images/AddButton.png" style="height:26px; height:26px;" title="Add area of expertise" /></button>    
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table id="ExpertiseGridTable">
+                    <tr>
+                        <th style="width:32%">
+                            Primary
+                        </th>
+                        <th style="width:32%">
+                            Secondary
+                        </th>
+                        <th style="width:32%">
+                            Tertiary
+                        </th>
+                        <th style="width:3%">
+                            Action
+                        </th>
+                    </tr>
+                    <tbody id="ExpertiseTable_tr" style="width:100%"></tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" id="errorExpertise" style="color: red;  font-size: small;"></td>
+        </tr>
+    </table>
+    <table id="otherExpertiesDiv" class="auto-style1">
+        <tr>
+            <th colspan="2">Other Expertise</th>
+        </tr>
+        <tr>
+            <td colspan="2">               
+                <div style="border: none solid #ddd;">
+                    <div style="background-color: #F3F7FD; text-align: left; color: black; " id="otherExperties" class="ErrorMessageDiv">
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="4">Manuscript Details<span style="color:red">*</span></th>
+        </tr>
+        <tr>
+            <td style="width: 10%;">
+                <div style="padding-top:8px;">
+                    <input type="text" maxlength="50" id="txttitleId" placeholder="Manuscript ID" style="width:100%">
+                </div>
+            </td>
+            <td style="width: 86%;">
+                <div style="padding-top:8px;">
+                    <input type="hidden" id="txttitleTitleId" value="" />
+                    <input type="hidden" id="editTitleId" value="" />
+                    <input type="text" maxlength="1000" id="txttitleTitle" placeholder="Manuscript Title" style="width:100%">
+                </div>
+            </td>
+            <td style="width: 4%;">
+                <div id="addPanel" style="padding-top:5px;">
+                    <button type="submit" style="background-color:rgba(255,255,255,0.0);  border:none;" id="btnAddManuScriptDetails" onclick="AddManuscriptToTable();"><img src="../Images/AddButton.png" style="height:26px; height:26px;" title="Add Manuscript Details" /></button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div id="updatePanel" style="display:none">
+                    <input type="submit" id="btnUpdateManuScriptDetails" class="btn btn-primary btn-sm" value="Update" onclick="UpdateManuscriptToTable();" />
+                    <input type="submit" value="Cancel" class="btn btn-primary btn-sm" id="btnCancelManuScriptDetails" onclick="CancelManuscriptDetails();" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table style="table-layout: fixed;">
+                    <tbody id="ManuscriptDetails"></tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div id="saveDialog" title="Information !" style="display:none;">     
+        <h4>Reviewer saved successfully...!!</h4>   
+        <input type="text" style="display:none" id="newReviewerId" />
+        <input type="submit" value="OK" style="float:right; margin-right:10px" class="btn btn-primary btn-sm" onclick="ReviewerSaveSuccess();" id="btnSaveSucess" />  
+    </div>
+    <div id="divPopup" class="dialog" title="Please verify the added affiliation details" style="display:none;">
+        <table style="table-layout: fixed;">
+            <tr>
+                <td style="width:27%">Institute:</td>
+                <td class="crop" id="tdInstitute"></td>
+            </tr>
+            <tr>
+                <td style="width:27%">Department:</td>
+                <td class="crop" id="tdDepartment"></td>
+            </tr>
+            <tr>
+                <td style="width:27%">Street Name:</td>
+                <td class="crop" id="tdStreet"></td>
+            </tr>
+            <tr>
+                <td style="width:27%">Country Name:</td>
+                <td class="crop" id="tdCountry"></td>
+            </tr>
+            <tr>
+                <td style="width:27%">State Name:</td>
+                <td class="crop" id="tdState" ></td>
+            </tr>
+            <tr>
+                <td style="width:27%">City Name:</td>
+                <td class="crop" id="tdCity"></td>
+            </tr>
+            <tr>
+                <td style="width:27%">                    
+                </td>
+                <td>
+                    <br />
+                    <input type="submit" value="Cancel" style="float:right" onclick="CloseSavePopup();" class="btn btn-primary btn-sm" id="btnClosePopup" />  
+                    <input type="submit" value="Submit" style="float:right; margin-right:10px" class="btn btn-primary btn-sm" onclick="SaveProfile();" id="btnSaveConfirm" />                                   
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="float:right; margin-right:40px;">
+        <input type="submit" value="Save" onclick="VerificationPopupOnSave();" id="btnSaveProfile" class="btn btn-primary btn-sm" />     
+        <input type="submit" value="New" onclick="CreateNewProfile();" id="btnCreateNewProfile" class="btn btn-primary btn-sm" />     
+        <input type="submit" value="Cancel" onclick="CancelProfile();" id="btnCancelProfile" class="btn btn-primary btn-sm" />     
+    </div>
+</div>      
+<a href="#" id="scroll-up" style="display: none;"></a>     

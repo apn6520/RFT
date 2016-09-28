@@ -1,0 +1,40 @@
+1 2016.07.05 17:02:04:6788 19 Application started on computer LAINPUMA0172 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.05 17:02:04:7068 2 Try Register the container as  IDependencyResolver.
+
+1 2016.07.05 17:07:32:1268 1 Application started on computer LAINPUMA0172 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.05 17:07:32:1308 0 Try Register the container as  IDependencyResolver.
+
+1 2016.07.05 17:16:52:2093 4 Application started on computer LAINPUMA0172 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.05 17:16:52:2403 1 Try Register the container as  IDependencyResolver.
+
+1 2016.07.05 17:21:34:6953 2 Application started on computer LAINPUMA0172 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.05 17:21:34:6993 0 Try Register the container as  IDependencyResolver.
+
+1 2016.07.05 18:15:47:7923 1 Application started on computer LAINPUMA0172 DomainName SPRINGER-SBM
+Try Register all objects
+Registered MVC Controllers
+DI container try verify
+DI container verify done
+
+2 2016.07.05 18:15:47:7963 0 Try Register the container as  IDependencyResolver.
+

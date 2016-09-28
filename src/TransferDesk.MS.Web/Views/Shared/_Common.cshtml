@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Transfer Desk</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript"> var AppPath = '@Url.Content("~/")' </script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top" style="background-color: whitesmoke;">
+        <div class="container">
+            <br />
+            <div class="navbar-header">
+                <p style="display: inline;">
+                    <img src="~/Images/Springer-Nature.jpg" width="250px" height="35px" title="Springer Logo" />
+                    <span class="heading" style="padding-left: 150px">Manuscript Services-User Master</span>
+                    <span style="padding-left: 50px"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <br />
+    <hr />
+    <footer>
+        <div class="col-md-10">
+            <p align="center" style="margin-left: 15%;"> Copyright &copy; @DateTime.Now.Year | Springer Nature</p>
+        </div>
+        <div class="col-md-2">
+            <p style="text-align: right;">MS v1.0.10</p>
+        </div>
+    </footer>
+</body>
+
+</html>

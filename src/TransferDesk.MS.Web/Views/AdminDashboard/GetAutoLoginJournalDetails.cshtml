@@ -1,0 +1,169 @@
+﻿@{
+    ViewBag.Title = "Get Auto Login Journal Details";
+    Layout = "~/Views/Shared/_AutoLoginLayout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/CustomeScript/AutoLogin.js"></script>
+    <script src="../Scripts/jsrender.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#dialogEmail,#dialogErrorDescription").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000,
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+    <style>
+        #SearchResultGridDiv th {
+            background-color: #F5F5F5;
+            text-align: left;
+            padding: 5px;
+            border: 1px solid #ddd;
+            font-size: 12px;
+        }
+
+        #SearchResultGridDiv td {
+            text-align: left;
+            padding: 4px;
+            border: 1px solid #ddd;
+            vertical-align: inherit;
+            font-size: 13px;
+            word-break: break-all;
+            white-space: fixed;
+            table-layout: fixed;
+        }
+
+        .ui-dialog-titlebar-close {
+            background: #fdf5ce url("../images/1468590632_Close_Box_Red.png") 50% 50% repeat-x !important;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <script id="tableTemplate" type="text/x-jsrender">
+        <tr id='{{:ID}}_tr'>
+            <td>
+                {{:MSID}}
+            </td>
+            <td>
+                {{:JournalTitle}}
+            </td>
+            <td>
+                {{:ArticleTypeName}}
+            </td>
+            <td>
+                {{:ArticleTitle}}
+            </td>
+            @*<td>
+                {{:InitialSubmissionDate}}
+            </td>*@
+            <td style="text-align: center">
+                <img title="Email Details" src="../Images/emailIcon.png" style="width: 20px; height: 20px;" onclick="getEmail(id)" id="{{:MailBody}}">
+            </td>
+            <td style="text-align: center">
+                {{if ErrorDescription !=""}}
+                <img title="Error Discription" src="../Images/error-icon.gif" style="width: 20px; height: 20px;" onclick="getErrorDescription(id)" id="{{:ErrorDescription}}">
+                {{/if}}
+            </td>
+            <td style="text-align: center">
+                {{if ErrorDescription ==""}}
+                <img title="Job Login Successful...!" src="../Images/Yes-icon.jpg" style="width: 25px; height: 25px;">
+                {{else}}
+                <img title="Job Login Unsuccessful...!" src="../Images/No-icon.jpg" style="width: 25px; height: 25px;">
+            </td>
+        </tr>
+    </script>
+
+    <table style="width: 100%">
+        <tr>
+            <td>
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <input type="text" id="datepicker" class="form-control" placeholder="Select Date...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button" id="btnSearch">Search!</button>
+                        </span>
+
+                    </div>
+                </div>
+                @*<div id="divtot" class="col-lg-3" style="">
+                    Total Jobs :  <p title="" id="pTotal"></p> 
+                </div>*@
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
+    @*<button id="opener">Open Dialog</button>*@
+
+    <div id="SearchResultGridDiv" style="width: 100%">
+        <table style="width: 100%">
+            <tr>
+                <th style="width: 11%">
+                    MSID
+                </th>
+                <th style="width: 25%">
+                    Jounal Title
+                </th>
+                <th style="width: 14%">
+                    Article Type
+                </th>
+                <th style="width: 40%">
+                    Article Tile
+                </th>
+                @*<th style="width: 12%">
+                    Initial Submission Date
+                </th>*@
+                <th style="max-width: 3%">
+                </th>
+                <th style="width: 3%;">
+                </th>
+                <th style="width: 3%">
+                </th>
+            </tr>
+            <tbody id="template_tr" style="width: 100%"></tbody>
+        </table>
+        <br />
+    </div>
+
+
+    <div id="dialogEmail" title="Email Details">
+        <p id="eMailDisplay"></p>
+
+    </div>
+
+    <div id="dialogErrorDescription" title="Error Description">
+        <p id="eErrorDescription"></p>
+
+    </div>
+
+
+</body>
+</html>

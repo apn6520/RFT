@@ -1,0 +1,3 @@
+2 2016.08.17 11:24:08:8687 3413 INFO: UserId-apn6520open reviewer index Search.
+3 2016.08.17 11:24:16:4796 7598 Info : Method Name - GetJournal : term-& Journal count98
+4 2016.08.17 11:24:17:4218 939 Info : Method Name - GetJournal : term-& Journal count98

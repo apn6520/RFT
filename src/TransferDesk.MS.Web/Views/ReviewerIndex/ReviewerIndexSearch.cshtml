@@ -1,0 +1,360 @@
+﻿@{
+    ViewBag.Title = "ReviewerIndexSearch";
+    Layout = "~/Views/Shared/_ReviewerIndexLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jsrender.js" type="text/javascript"></script>
+    <link href="~/Content/ReviewerIndex.css" rel="stylesheet" />
+    @*sam code*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/CustomeScript/ReviewerIndexAssignMS.js"></script>
+</head>
+<body>
+    <script id="tableTemplate" type="text/x-jsrender">
+        <tr id='{{:RowNo}}_tr'>
+            <td>
+                <input id='{{:RowNo}}' value="{{:ReviewerID}}" onchange="HighlightSelectedTr(id)" type='checkbox' />
+            </td>
+            <td>
+                {{:ReviewerName}}
+            </td>
+            <td>
+                {{:Title}}
+            </td>
+            <td>
+                {{:Affiliation}}
+            </td>
+            <td>
+                {{:emailaddress}}
+            </td>
+            <td>
+                {{:AreaOfExpertise}}
+            </td>
+            <td>
+                {{:Referencelink}}
+            </td>
+            <td style="text-align: center">
+                {{:Numberofrelevantpublications}}
+            </td>
+            <td>
+                <a href="../ReviewerIndex/ReviewerProfile?reviewerId={{:ReviewerID}}" target="_blank" class="review">View/Edit</a>
+
+            </td>
+        </tr>
+    </script>
+    <script src="~/Scripts/CustomeScript/ReviewerIndex.js"></script>
+    <br />
+    <div id="SearchDiv">
+        <div>
+            @*<input type="submit" value="New Profile" id="btnNewProfile" class="btn btn-primary btn-sm" />*@
+            <h1 style="font-size: 18px; padding-left: 5px; color: #192F5A; text-align: left; float: left;">Keywords Search Categories</h1>
+            <h2 style="font-size: 18px; padding-left: 5px; text-align: right; float: right;"><a href="../ReviewerIndex/ReviewerProfile?reviewerId=0" target="_blank">Create New Profile</a></h2>
+            <hr style="clear:both;" />
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td style="width: 30%;">
+                    <select class="dropdown" id="ddlManuscript" style="width:91%;">
+                        <option selected="selected" value="tm.Name">Manuscript Title</option>
+                        <option value="vwe.AreaOfExpertise">Area Of Expertise</option>
+                        <option value="rm.ReviewerName">Reviewer Name</option>
+                        <option value="vw.Affiliation">Affiliation</option>
+                        <option value="rml.Email">Email</option>
+                    </select>
+                </td>
+                <td style="width: 70%;">
+                    <input type="text" id="txtTitleSrch" class="title_name_textbox" placeholder="Text Search" style="width:100%;" />
+                </td>
+            </tr>
+            <tr style="width: 30%;">
+                <td style="width: 30%">
+                    <select id="ddlConditions" style="width:20%;">
+                        <option selected="selected" value="AND">AND</option>
+                        <option value="OR">OR</option>
+                    </select>
+                    <select id="ddlSearchTwo" style="width:70%;">
+                        <option value="tm.Name">Manuscript Title</option>
+                        <option selected="selected" value="vwe.AreaOfExpertise">Area Of Expertise</option>
+                        <option value="rm.ReviewerName">Reviewer Name</option>
+                        <option value="vw.Affiliation">Affiliation</option>
+                        <option value="rml.Email">Email</option>
+                    </select>
+                </td>
+                <td style="width: 70%;"><input type="text" id="txtTitleSrch1" class="title_name_textbox" placeholder="Text Search" style="width:100%;" /></td>
+            </tr>
+            <tr style="width: 30%;">
+                <td style="width: 30%;">
+                    <div style="padding-top:8px;">
+                        Relevant Publications Between
+                        <input type="text" maxlength="8" id="txtGreaterthan" style="width:62px;" />
+                        <span id="lblTo">To</span>
+                        <input type="text" maxlength="8" id="txtLessThan" class="margin_botm_10" style="width:62px;" />
+                    </div>
+                </td>
+                <td style="width: 70%; align-content: center">
+                    <table id="searchButtonPanelTable" style="border: none; width:100%">
+                        <tbody>
+                            <tr>
+                                <td style="width:7%">
+                                    <input type="submit" value="Search" onclick="btnSearch_onclick();" id="btnSearch" class="btn btn-primary btn-sm" />
+
+                                </td>
+                                <td style="width:7%">
+                                    <input type="submit" value="Reset" onclick="resetSearch();" id="btnReset1" class="btn btn-primary btn-sm" />
+
+                                </td>
+                                <td style="width:10%">
+                                    <input type="submit" value="Export to Excel" id="btnExport" class="btn btn-primary btn-sm" />
+
+                                </td>
+                                <td style="width:15%">
+                                    <div id="UpdatePanel7">
+
+                                        <div id="buttonContainer">
+                                            <input type="submit" value="Assign Manuscript ID" onclick="getCheckedValues()" id="btnAssignMSScript" class="btn btn-primary btn-sm" data-target="#myModal2" data-backdrop="false" data-toggle="modal" />
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span id="lblTimeTaken"></span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <div id="PaginatationDiv" style="padding-bottom:10px; display:none">
+        <div style="height: 20px; line-height: 20px; font-size: 15px; color: #286090">
+            <div class="col-sm-5 sm-padding">
+                <span id="SerchResult">Search results <span id="start_span_header"></span> To <span id="last_span_header"></span> of <span id="TotalCount_span_header"></span></span>
+            </div>
+            <div class="col-sm-4">
+                <span id="lblPageResult">  </span>
+            </div>
+            <div class="col-sm-3" style="text-align: right; top: 0px; left: 0px;">
+                Display
+                <select onchange="btnSearch_onclick()" id="ddlDisplayPages" style="height:25px;">
+                    <option selected="selected" value="20">20</option>
+                    <option value="40">40</option>
+                    <option value="60">60</option>
+                    <option value="80">80</option>
+                    <option value="100">100</option>
+
+                </select>
+                results per page.
+            </div>
+        </div>
+    </div>
+    <div id="NoReviewerFound" style="border: 1px solid #ddd; display: none;">
+        <div style="background-color: whitesmoke;" class="ErrorMessageDiv">
+            No Reviewer Found
+        </div>
+    </div>
+    <div id="loading" class='loaderClass'>
+        <img src="../Images/loading.gif" alt="" id="loaderImg" style="height:50px; background-position:center" />
+    </div>
+    <div id="SearchResultGridDiv" style="display: none; width: 100%">
+        <table>
+            <tr>
+                <th style="width: 2%">
+                    <input disabled type='checkbox' />
+                </th>
+                <th style="width: 10%">
+                    Reviewer Name
+                </th>
+                <th style="width: 15%">
+                    Manuscript Title
+                </th>
+                <th style="width: 19%">
+                    Affiliation
+                </th>
+                <th style="width: 7%">
+                    Email ID
+                </th>
+                <th style="width: 15%">
+                    Area of Expertise
+                </th>
+                <th style="max-width: 24%">
+                    Reference Links
+                </th>
+                <th style="width: 3%;">
+                    Publications
+                </th>
+                <th style="width: 5%">
+                    View/Edit
+                </th>
+            </tr>
+            <tbody id="template_tr" style="width: 100%"></tbody>
+        </table>
+        <br />
+        <div>
+            <div style="margin-left: 40%">
+                <img src="~/Images/paging_far_left.gif" id="btn_First" onclick="FirstAndLastPagination(0);" />&nbsp;
+                <img src="~/Images/paging_left.gif" id="btn_Previous" onclick="ReviewerIndexPagination(0);" />&nbsp;
+                <span style="color: #286090">Page <span id="start_span"></span> of <span id="last_span"></span></span>&nbsp;
+                <img src="~/Images/paging_right.gif" id="btn_Next" onclick="ReviewerIndexPagination(1);" />&nbsp;
+                <img src="~/Images/paging_far_right.gif" id="btn_Last" onclick="FirstAndLastPagination(1);" />
+            </div>
+        </div>
+    </div>
+
+    @*<asp:Panel ID="Panel1" DefaultButton="btnAssignMS" runat="server">*@
+
+    <div>
+
+        <script id="tableTemplateMSPopup" type="text/x-jsrender">
+            <tr id='{{:ReviewerMasterID}}_tr'>
+                <td>
+                    {{if IsAssociateFinalSubmit == "true" || IsAssociateFinalSubmit == "false" }}
+                    {{if IsAssociateFinalSubmit == "true"}}
+                    <input id='{{:ReviewerMasterID}}' value='{{:ReviewerMasterID}}' checked disabled onchange="CheckDuplicatesReviewers(id)" type='checkbox' title='{{:ToolTip}}' />
+                    {{else}}
+                    <input id='{{:ReviewerMasterID}}' value='{{:ReviewerMasterID}}' checked onchange="CheckDuplicatesReviewers(id)" type='checkbox' title='{{:ToolTip}}' />
+                    {{/if}}
+                    {{else IsAssociateFinalSubmit == "00" }}
+                    <input id='{{:ReviewerMasterID}}' value='{{:ReviewerMasterID}}' onchange="CheckDuplicatesReviewers(id)" type='checkbox' title='{{:ToolTip}}' />
+                    {{/if}}
+                </td>
+                <td style="display:none">
+                    <input id='{{:ID}}' value='{{:ID}}' hidden />
+                </td>
+                <td>
+                    <a href="../ReviewerIndex/ReviewerProfile?reviewerId={{:ReviewerMasterID}}" target="_blank" class="review">{{:ReviewerName}} </a>
+                </td>
+                <td>
+                    {{:Affiliation}}
+                </td>
+                <td>
+                    {{:email}}
+                </td>
+                <td>
+                    {{:Referencelink}}
+                </td>
+                <td>
+                    {{if CreatedDate != null}}
+                    {{:CreatedDate}}
+                    {{/if}}
+                </td>
+            </tr>
+        </script>
+
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog" style="width: 100%; margin-top: -30px; top: 0px; margin-bottom: 0px; bottom: 0px; margin-right: -9px;">
+                <!-- Modal content-->
+                <div class="modal-content" style="overflow: auto">
+
+                    <div class="modal-header" style="height: 30px; padding-top: 1px">
+                        <button type="button" class="close" onclick="return ClearPopUpControls();" data-dismiss="modal" title="Cloce">×</button>
+                        <h4 class="modal-title">
+                            <span style="font-size: 15px;font-weight: bold">@string.Format("{0:dddd, d MMMM, yyyy}", @DateTime.Now.Date)</span>
+                        </h4>
+                    </div>
+
+                    <div class="modal-body" style="height: auto">
+                        @*350px;*@
+                        <div class="row" style="padding-left: 10px; padding-right: 10px; background-color: #F5F5F5;">
+                            <div class="col-sm-2">
+                                Manuscript ID
+                                <span class="asterik">*</span>
+                            </div>
+
+                            <div class="col-sm-4" style="">
+                                <input type="text" id="txtManuscriptID" style="width: 50%; float: left;" class="form-control input-sm" placeholder="Manuscript ID" />
+                                @*<div style="float: left;margin: 5px"><input type='checkbox' onclick="IsRevision()" title="Is Revision?" id="chkIsRevision" />&nbsp;Is Revision?</div>*@
+
+                            </div>
+
+                            <div class="col-sm-1">
+                                Job Type
+                                <span class="asterik">*</span>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="radio" id="journalRadiobtn" name="Journal" onclick="onjournalClick()" value="J" checked> Journal
+                                <input type="radio" id="BookRadiobtn" name="Journal" onclick="onBookClick()" value="B"> Book
+                                <select id="ddlJournalTitle" style="width: 421px;"></select>
+                            </div>
+
+                        </div>
+                        <br />
+                        <div class="row" style="padding-left: 10px; padding-right: 10px; background-color: #F5F5F5;">
+                            <div class="col-sm-2">
+                                Article Title
+                                <span class="asterik">*</span>
+                            </div>
+                            <div class="col-sm-4">
+                                <textarea id="txtArticleTitle" class="form-control input-sm" placeholder="Article Title"></textarea>
+                            </div>
+
+                            <div class="col-sm-1">
+                                Task
+                                <span class="asterik">*</span>
+                            </div>
+                            <div class="col-sm-5">
+                                <select id="ddlTask" style="width: 421px;"></select>
+                            </div>
+
+                        </div>
+                        <br />
+                        <div id="divMsDetails" class="col-md-12" style="overflow: auto; border: none; padding-left: 0px; padding-right: 10px;">
+
+                            <table>
+                                <tr>
+                                    <th style="width: 2%">
+                                        <input disabled checked="" type='checkbox' />
+                                    </th>
+                                    <th style="width: 1%; display: none">
+
+                                    </th>
+                                    <th style="width: 17%">
+                                        Reviewer Name
+                                    </th>
+                                    <th style="width: 25%">
+                                        Affiliation
+                                    </th>
+                                    <th style="width: 17%">
+                                        Email ID
+                                    </th>
+                                    <th style="max-width: 28%">
+                                        Links
+                                    </th>
+                                    <th style="width: 10%">
+                                        Submitted Date
+                                    </th>
+                                </tr>
+                                <tbody id="tableTemplateMSPopup_tr" style="width: 100%"></tbody>
+                            </table>
+
+
+                        </div>
+                        <div class="col-md-12 modal-footer" style="padding-left: 10px; padding-right: 10px;">
+
+                            <input type="submit" value="Save" onclick="" id="btnAssignMS" class="btn btn-primary btn-sm" />
+                            <input type="submit" value="Submit" onclick="" id="btnSubmitFinal" class="btn btn-primary btn-sm" />
+                            <input type="submit" value="Cancel" id="btnCloseMS" class="btn btn-primary btn-sm" data-dismiss="modal" onclick="ClearPopUpControls();" />
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @*</asp:Panel>*@
+    <a href="#" id="scroll-up" style="display: none;"></a>
+</body>
+</html>

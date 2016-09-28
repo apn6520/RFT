@@ -1,0 +1,8 @@
+2 2016.08.11 11:19:56:3739 481326 INFO: UserId-apn6520open reviewer index Search.
+3 2016.08.11 11:20:00:3299 3947 Info : Method Name - GetJournal : term-& Journal count98
+4 2016.08.11 11:20:01:5609 1228 Info : Method Name - GetJournal : term-& Journal count98
+5 2016.08.11 11:20:04:7799 3214 Info : Method Name - GetJournal : term-& Journal count98
+6 2016.08.11 11:20:05:4609 676 Info : Method Name - GetPrimaryExpertise : PrimaryExpertise count13
+7 2016.08.11 15:10:36:8101 13829997 INFO: UserId-apn6520open reviewer index Search.
+8 2016.08.11 15:10:40:0493 3225 Info : Method Name - GetJournal : term-& Journal count98
+9 2016.08.11 15:10:40:5223 469 Info : Method Name - GetJournal : term-& Journal count98

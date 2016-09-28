@@ -1,0 +1,30 @@
+2 2016.09.28 12:27:36:0784 43378 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+3 2016.09.28 12:27:37:1766 1091 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+4 2016.09.28 12:27:37:1906 5 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+5 2016.09.28 12:27:37:1966 0 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+6 2016.09.28 12:28:21:4520 44249 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+7 2016.09.28 12:28:22:1661 702 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+8 2016.09.28 12:28:22:1761 1 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+9 2016.09.28 12:28:22:1841 1 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
+10 2016.09.28 12:30:10:3959 108197 GetReviewerIds execution start.
+KeySearchOne : KeySearchOne KeySearchTwo KeySearchTwo SearchCondition : SearchCondition DDLOneValue DDLOneValue DDLTwoValue : DDLTwoValue
+GetReviewerIds execution end.
+
+11 2016.09.28 12:30:11:1139 711 adding parameters to SqlParameter
+store procedure executed successfully.
+INFO DAL : Method Name - GetReviewersLists : reviewer detail result count - 94
+
+12 2016.09.28 12:30:11:1289 1 Info: Method Name - GetReviewerIndexData , Parameters > searchOne: ,searchTwo: , ConditionVal: , SearchOneVal: , SearchTwoVal: Min Value: 0Max Value: 999Total Result Count: 20
+13 2016.09.28 12:30:11:1429 1 Info: Method Name - GetReviewerIndexData , Result Count : 20totalcount: 94firstRow: 94lastRow: 75
