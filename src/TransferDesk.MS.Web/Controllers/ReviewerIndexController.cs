@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Net.Http;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
@@ -23,6 +25,11 @@ namespace TransferDesk.MS.Web.Controllers
         private ReviewerIndexDBContext _reviewerIndexDBContext;
         private readonly ManuscriptDBRepositoryReadSide _manuscriptDBRepositoryReadSide;
         private ILogger _logger;
+
+        private const string URL = "http://api.elsevier.com/content/search/scopus";    
+        private const string AbstractSearchURL = "http://192.168.84.68/Scopusmockservice/api/values/AbstractSearch?scopus_id=";
+        private const string AuthorSearchUrl = "http://192.168.84.68/Scopusmockservice/api/values/Authorsearch?author_id=";
+        int counter = 0;
 
         public ReviewerIndexController(ILogger Logger)
         {
@@ -647,6 +654,115 @@ namespace TransferDesk.MS.Web.Controllers
             }
         }
 
+
+        public JsonResult SearchScopus()
+        {
+            string urlParameters = "?query=p-nitrophenyl&apiKey=40ab7ae0b9e65f067cfe446e01585cc4&HTTPAccept=application/json&count=6";
+            HttpClient client = new HttpClient();
+            DateTime startTime = DateTime.Now;
+            client.BaseAddress = new Uri(URL);
+           
+            // List data response.
+            HttpResponseMessage response = client.GetAsync(urlParameters).Result;  // Blocking call!
+            List<string> authorUrlList = new List<string>();
+            List<ReviewerInfo> objReviewerInfo = new List<ReviewerInfo>();
+
+            JObject o = JObject.Parse(response.Content.ReadAsStringAsync().Result);
+         
+            var entryList = o["search-results"]["entry"];
+            foreach (var item in entryList)
+            {
+                authorUrlList.Add(item["prism:url"].ToString());
+            }
+           
+            client.Dispose();
+            string abstracturlParameters = "?apiKey=40ab7ae0b9e65f067cfe446e01585cc4&HTTPAccept=application/json&count=5";
+            // Now it will call abstract by scopus_id
+            foreach (var item in authorUrlList)
+            {
+                try
+                {
+
+                    HttpClient newClient = new HttpClient();   
+
+                    newClient.BaseAddress = new Uri(item);
+                    counter++;
+                    HttpResponseMessage abstractResponse = newClient.GetAsync(abstracturlParameters).Result;                  
+                    JObject data = JObject.Parse(abstractResponse.Content.ReadAsStringAsync().Result);
+                 
+                    if (data["abstracts-retrieval-response"]["authors"] != null)
+                    {
+                        var authorList = data["abstracts-retrieval-response"]["authors"]["author"];
+                        foreach (var author in authorList)
+                        {
+                            objReviewerInfo.Add(new ReviewerInfo { Author_ID = Convert.ToString(author["@auid"]), AuthorUrl = Convert.ToString(author["author-url"]), FirstName = Convert.ToString(author["ce:indexed-name"]), Initials = Convert.ToString(author["ce:initials"]), LastName = Convert.ToString(author["ce:surname"]) });
+                        }
+                    }
+
+                    newClient.Dispose();
+                }
+                catch (Exception ex)
+                {
+
+                }
+
+                foreach (var reviewer in objReviewerInfo)
+                {
+                    HttpClient authorClient = new HttpClient();
+                    authorClient.BaseAddress = new Uri(reviewer.AuthorUrl);
+                    counter++;
+                    HttpResponseMessage authorResponse = authorClient.GetAsync(abstracturlParameters).Result;
+                    
+              
+                    if (Convert.ToString(authorResponse) != "\"\"")
+                    {
+                        JObject data = JObject.Parse(authorResponse.Content.ReadAsStringAsync().Result);
+                      
+                        if (data["author-retrieval-response"][0]["author-profile"]["affiliation-current"] != null)
+                        {
+                            var currentAffiliation = data["author-retrieval-response"][0]["author-profile"]["affiliation-current"]["affiliation"]["ip-doc"];
+                            reviewer.Affiliation = Convert.ToString(currentAffiliation["afdispname"]);
+                        }
+                        if (data["author-retrieval-response"][0]["coredata"]["link"] != null)
+                        {
+                            var refData = data["author-retrieval-response"][0]["coredata"]["link"];
+                            reviewer.Reference_Links = Convert.ToString(refData[0]["@href"]);
+                        }
+                        if (data["author-retrieval-response"][0]["subject-areas"]["subject-area"] != null)
+                        {
+                            var subjectAreas = data["author-retrieval-response"][0]["subject-areas"]["subject-area"];
+                            string subjectList = string.Empty;
+                            foreach (var subject in subjectAreas)
+                            {
+                                subjectList = subjectList + ", " + Convert.ToString(subject["$"]);
+                            }
+                            reviewer.Area_of_Expertise = subjectList;
+                        }
+                    }
+                }
+            }
+            
+            DateTime endTime = DateTime.Now;
+            var result = new
+            {
+                ReviewerInfo = objReviewerInfo,
+                TotalDurtaion = (endTime - startTime).TotalSeconds,
+                NumberOfHits = counter
+            };
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
     }
 
+    public class ReviewerInfo
+    {
+        public string Author_ID { get; set; }
+        public string Affiliation { get; set; }
+        public string Reference_Links { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Initials { get; set; }
+        public string Area_of_Expertise { get; set; }
+        public string AuthorUrl { get; set; }
+        public string AuthorJson { get; set; }
+    }
 }
