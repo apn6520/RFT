@@ -26,11 +26,6 @@ namespace TransferDesk.MS.Web.Controllers
         private readonly ManuscriptDBRepositoryReadSide _manuscriptDBRepositoryReadSide;
         private ILogger _logger;
 
-        private const string URL = "http://api.elsevier.com/content/search/scopus";    
-        private const string AbstractSearchURL = "http://192.168.84.68/Scopusmockservice/api/values/AbstractSearch?scopus_id=";
-        private const string AuthorSearchUrl = "http://192.168.84.68/Scopusmockservice/api/values/Authorsearch?author_id=";
-        int counter = 0;
-
         public ReviewerIndexController(ILogger Logger)
         {
             try
@@ -62,7 +57,6 @@ namespace TransferDesk.MS.Web.Controllers
         /// <returns></returns>
         public ActionResult ReviewerIndexSearch()
         {
-
             try
             { 
                 if (Session["UserName"] == null)
@@ -134,6 +128,7 @@ namespace TransferDesk.MS.Web.Controllers
                 long lastRow = 20;
                 int totalCount = 0;
                 List<pr_GetReviewersList> searchResult = new List<pr_GetReviewersList>();
+                List<pr_GetReviewersList> scopusSearchResult = new List<pr_GetReviewersList>();
                 var userId = @System.Web.HttpContext.Current.User.Identity.Name.Replace("SPRINGER-SBM\\", "");
                 minValue = minValue == string.Empty ? null : minValue;
                 maxValue = maxValue == string.Empty ? null : maxValue;
@@ -143,11 +138,12 @@ namespace TransferDesk.MS.Web.Controllers
                     var strReviewersIDs = _reviewerIndexDBRepositoriesReadSite.GetReviewerIds(searchOne, searchTwo, ConditionVal, SearchOneVal, SearchTwoVal);
 
                     var profileList = _reviewerIndexDBRepositoriesReadSite.GetReviewersLists(strReviewersIDs, Convert.ToInt32(minValue), Convert.ToInt32(maxValue)).ToList();
+
                     Session["SearchResult"] = profileList;
                 }
-                searchResult = Session["SearchResult"] as List<pr_GetReviewersList>;
+                searchResult = Session["SearchResult"] as List<pr_GetReviewersList>; 
 
-                var result = searchResult.Skip(fromrow - 1).Take(pagesize).ToList();
+                var result = searchResult.Skip(fromrow - 1).Take(pagesize).OrderBy(o => o.Numberofrelevantpublications).ToList();
                 if (result.Count > 0)
                 {
                     firstRow = result.FirstOrDefault().RowNo;
@@ -155,12 +151,24 @@ namespace TransferDesk.MS.Web.Controllers
                     totalCount = searchResult.Count();
                 }
 
+                int counter;
+                DateTime startTime;
+                List<ReviewerInfo> objReviewerInfo;
+                ScopusOnlineResult(searchOne, out counter, out startTime, out objReviewerInfo);
+
+                foreach (var item in objReviewerInfo)
+                {
+                    scopusSearchResult.Add(new pr_GetReviewersList { Affiliation = item.Affiliation, AreaOfExpertise = item.Area_of_Expertise, Referencelink = item.Reference_Links, ReviewerName = item.FirstName, emailaddress = item.AuthorUrl });
+                }
+                DateTime endTime = DateTime.Now;
                 var jsonData = new
                 {
                     totalcount = totalCount,
                     firstrownumber = firstRow,
                     lastrownumber = lastRow,
-                    records = result
+                    records = result,
+                    ScopusData = scopusSearchResult,
+                    TotalDurtaion = (endTime - startTime).TotalSeconds
                 };
                 _logger.Log(userId, "Info: Method Name - GetReviewerIndexData , Parameters > searchOne: " + searchOne + ",searchTwo: " + searchTwo + ", ConditionVal: " + ConditionVal + ", SearchOneVal: " + SearchOneVal + ", SearchTwoVal: " + SearchTwoVal + "Min Value: " + minValue + "Max Value: " + maxValue + "Total Result Count: " + result.Count);
                 _logger.Log(userId, "Info: Method Name - GetReviewerIndexData , Result Count : " + result.Count + "totalcount: " + totalCount + "firstRow: " + firstRow + "lastRow: " + lastRow);
@@ -655,26 +663,56 @@ namespace TransferDesk.MS.Web.Controllers
         }
 
 
-        public JsonResult SearchScopus()
+        public JsonResult SearchScopus(string keyword)
         {
-            string urlParameters = "?query=p-nitrophenyl&apiKey=40ab7ae0b9e65f067cfe446e01585cc4&HTTPAccept=application/json&count=6";
+
+          List<pr_GetReviewersList> searchResult = new List<pr_GetReviewersList>();
+          int counter;
+          DateTime startTime;
+          List<ReviewerInfo> objReviewerInfo;
+          ScopusOnlineResult(keyword, out counter, out startTime, out objReviewerInfo);
+
+            foreach (var item in objReviewerInfo)
+            {
+                searchResult.Add(new pr_GetReviewersList { Affiliation = item.Affiliation, AreaOfExpertise = item.Area_of_Expertise, Referencelink = item.Reference_Links, ReviewerName = item.FirstName, emailaddress = item.AuthorUrl });
+            }
+
+            DateTime endTime = DateTime.Now;
+            var result = new
+            {
+                ReviewerInfo = objReviewerInfo,
+                searchResult = searchResult,
+                TotalDurtaion = (endTime - startTime).TotalSeconds,
+                NumberOfHits = counter
+            };
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        private static void ScopusOnlineResult(string keyword, out int counter, out DateTime startTime, out List<ReviewerInfo> objReviewerInfo)
+        {
+            string URL = "http://api.elsevier.com/content/search/scopus";
+            string AbstractSearchURL = "http://192.168.84.68/Scopusmockservice/api/values/AbstractSearch?scopus_id=";
+            string AuthorSearchUrl = "http://192.168.84.68/Scopusmockservice/api/values/Authorsearch?author_id=";
+            counter = 0;
+
+            string urlParameters = "?query=" + keyword + "&apiKey=40ab7ae0b9e65f067cfe446e01585cc4&HTTPAccept=application/json&count=6";
             HttpClient client = new HttpClient();
-            DateTime startTime = DateTime.Now;
+            startTime = DateTime.Now;
             client.BaseAddress = new Uri(URL);
-           
+
             // List data response.
             HttpResponseMessage response = client.GetAsync(urlParameters).Result;  // Blocking call!
             List<string> authorUrlList = new List<string>();
-            List<ReviewerInfo> objReviewerInfo = new List<ReviewerInfo>();
+            objReviewerInfo = new List<ReviewerInfo>();
 
             JObject o = JObject.Parse(response.Content.ReadAsStringAsync().Result);
-         
+
             var entryList = o["search-results"]["entry"];
             foreach (var item in entryList)
             {
                 authorUrlList.Add(item["prism:url"].ToString());
             }
-           
+
             client.Dispose();
             string abstracturlParameters = "?apiKey=40ab7ae0b9e65f067cfe446e01585cc4&HTTPAccept=application/json&count=5";
             // Now it will call abstract by scopus_id
@@ -683,13 +721,13 @@ namespace TransferDesk.MS.Web.Controllers
                 try
                 {
 
-                    HttpClient newClient = new HttpClient();   
+                    HttpClient newClient = new HttpClient();
 
                     newClient.BaseAddress = new Uri(item);
                     counter++;
-                    HttpResponseMessage abstractResponse = newClient.GetAsync(abstracturlParameters).Result;                  
+                    HttpResponseMessage abstractResponse = newClient.GetAsync(abstracturlParameters).Result;
                     JObject data = JObject.Parse(abstractResponse.Content.ReadAsStringAsync().Result);
-                 
+
                     if (data["abstracts-retrieval-response"]["authors"] != null)
                     {
                         var authorList = data["abstracts-retrieval-response"]["authors"]["author"];
@@ -708,48 +746,83 @@ namespace TransferDesk.MS.Web.Controllers
 
                 foreach (var reviewer in objReviewerInfo)
                 {
-                    HttpClient authorClient = new HttpClient();
-                    authorClient.BaseAddress = new Uri(reviewer.AuthorUrl);
-                    counter++;
-                    HttpResponseMessage authorResponse = authorClient.GetAsync(abstracturlParameters).Result;
-                    
-              
-                    if (Convert.ToString(authorResponse) != "\"\"")
+                    //bool lessorequal75 = false;
+                    //int fiveYearLimit = 0;
+                    //int tenYearLimit = 0;
+
+                    //if (!string.IsNullOrEmpty(reviewer.AuthorUrl))
+                    //{
+                    //    var url = reviewer.AuthorUrl;
+                    //    var authorId = url.Split('/').Last();
+                    //    string authorUrl = @"http://api.elsevier.com/content/search/scopus?query=AU-ID(" + authorId + ")";
+                    //    HttpClient authorClient1 = new HttpClient();
+                    //    authorClient1.BaseAddress = new Uri(authorUrl);
+                    //    counter++;
+                    //    HttpResponseMessage authorResponse1 = authorClient1.GetAsync(abstracturlParameters).Result;
+                    //    if (Convert.ToString(authorResponse1) != "\"\"")
+                    //    {
+                    //        JObject data = JObject.Parse(authorResponse1.Content.ReadAsStringAsync().Result);
+                    //        if (data.Count >= 75)
+                    //        {
+                    //            lessorequal75 = true;
+                    //        }
+                            
+                    //        foreach (var result in data["search-results"]["entry"])
+                    //        {
+                    //            if (!string.IsNullOrEmpty(Convert.ToString(result["prism:coverDate"])))
+                    //            {
+                    //                var coverDate = Convert.ToDateTime(result["prism:coverDate"]);
+                    //                if (DateTime.Now.AddYears(-5) < coverDate)
+                    //                {
+                    //                    fiveYearLimit++;
+                    //                }
+
+                    //                if (DateTime.Now.AddYears(-10) < coverDate)
+                    //                {
+                    //                    tenYearLimit++;
+                    //                }
+                    //            }
+                    //        }
+
+                    //    }
+                    //}
+                    //lessorequal75 && fiveYearLimit >= 5 && fiveYearLimit < 50 && tenYearLimit >= 10
+                    if ( true)
                     {
-                        JObject data = JObject.Parse(authorResponse.Content.ReadAsStringAsync().Result);
-                      
-                        if (data["author-retrieval-response"][0]["author-profile"]["affiliation-current"] != null)
+                        HttpClient authorClient = new HttpClient();
+                        authorClient.BaseAddress = new Uri(reviewer.AuthorUrl);
+                        counter++;
+                        HttpResponseMessage authorResponse = authorClient.GetAsync(abstracturlParameters).Result;
+
+
+                        if (Convert.ToString(authorResponse) != "\"\"")
                         {
-                            var currentAffiliation = data["author-retrieval-response"][0]["author-profile"]["affiliation-current"]["affiliation"]["ip-doc"];
-                            reviewer.Affiliation = Convert.ToString(currentAffiliation["afdispname"]);
-                        }
-                        if (data["author-retrieval-response"][0]["coredata"]["link"] != null)
-                        {
-                            var refData = data["author-retrieval-response"][0]["coredata"]["link"];
-                            reviewer.Reference_Links = Convert.ToString(refData[0]["@href"]);
-                        }
-                        if (data["author-retrieval-response"][0]["subject-areas"]["subject-area"] != null)
-                        {
-                            var subjectAreas = data["author-retrieval-response"][0]["subject-areas"]["subject-area"];
-                            string subjectList = string.Empty;
-                            foreach (var subject in subjectAreas)
+                            JObject data = JObject.Parse(authorResponse.Content.ReadAsStringAsync().Result);
+
+                            if (data["author-retrieval-response"][0]["author-profile"]["affiliation-current"] != null)
                             {
-                                subjectList = subjectList + ", " + Convert.ToString(subject["$"]);
+                                var currentAffiliation = data["author-retrieval-response"][0]["author-profile"]["affiliation-current"]["affiliation"]["ip-doc"];
+                                reviewer.Affiliation = Convert.ToString(currentAffiliation["afdispname"]);
                             }
-                            reviewer.Area_of_Expertise = subjectList;
-                        }
+                            if (data["author-retrieval-response"][0]["coredata"]["link"] != null)
+                            {
+                                var refData = data["author-retrieval-response"][0]["coredata"]["link"];
+                                reviewer.Reference_Links = Convert.ToString(refData[0]["@href"]);
+                            }
+                            if (data["author-retrieval-response"][0]["subject-areas"]["subject-area"] != null)
+                            {
+                                var subjectAreas = data["author-retrieval-response"][0]["subject-areas"]["subject-area"];
+                                string subjectList = string.Empty;
+                                foreach (var subject in subjectAreas)
+                                {
+                                    subjectList = subjectList + ", " + Convert.ToString(subject["$"]);
+                                }
+                                reviewer.Area_of_Expertise = subjectList;
+                            }
+                        } 
                     }
                 }
             }
-            
-            DateTime endTime = DateTime.Now;
-            var result = new
-            {
-                ReviewerInfo = objReviewerInfo,
-                TotalDurtaion = (endTime - startTime).TotalSeconds,
-                NumberOfHits = counter
-            };
-            return Json(result, JsonRequestBehavior.AllowGet);
         }
     }
 

@@ -17,6 +17,38 @@
     <script src="~/Scripts/CustomeScript/ReviewerIndexAssignMS.js"></script>
 </head>
 <body>
+    <script id="ScopusTemplate" type="text/x-jsrender">
+        <tr id='{{:RowNo}}_tr' style="background-color: lightcyan">
+            <td>
+                <input id='{{:RowNo}}' value="{{:ReviewerID}}" onchange="HighlightSelectedTr(id)" disabled type='checkbox' />
+            </td>
+            <td>
+                {{:ReviewerName}}
+            </td>
+            <td>
+                {{:Title}}
+            </td>
+            <td>
+                {{:Affiliation}}
+            </td>
+            <td>
+                {{:emailaddress}}
+            </td>
+            <td>
+                {{:AreaOfExpertise}}
+            </td>
+            <td>
+                {{:Referencelink}}
+            </td>
+            <td style="text-align: center">
+                {{:Numberofrelevantpublications}}
+            </td>
+            <td>
+                <a href="../ReviewerIndex/ReviewerProfile?reviewerId={{:ReviewerID}}" target="_blank" class="review">View/Edit</a>
+
+            </td>
+        </tr>
+    </script>
     <script id="tableTemplate" type="text/x-jsrender">
         <tr id='{{:RowNo}}_tr'>
             <td>
@@ -70,7 +102,7 @@
                     </select>
                 </td>
                 <td style="width: 70%;">
-                    <input type="text" id="txtTitleSrch" class="title_name_textbox" placeholder="Text Search" style="width:100%;" />
+                    <input type="text" id="txtTitleSrch" class="title_name_textbox" value="Physics" placeholder="Text Search" style="width:100%;" />
                 </td>
             </tr>
             <tr style="width: 30%;">

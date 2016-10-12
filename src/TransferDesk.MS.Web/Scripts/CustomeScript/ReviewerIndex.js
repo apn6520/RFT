@@ -92,6 +92,7 @@ function btnSearch_onclick() {
             totalcount = response.totalcount;
             jQuery('#loading').hide();
             $("#template_tr").empty();
+            $("#template_tr").append($("#ScopusTemplate").render(response.ScopusData));
             $("#template_tr").append($("#tableTemplate").render(response.records));
             document.getElementById("start_span").innerHTML = Math.ceil(1);
             document.getElementById("last_span").innerHTML = Math.ceil(totalcount / pageCount);
