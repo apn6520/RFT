@@ -14,7 +14,7 @@
 <br />
 @Html.Raw(TempData["MSIDError"])
 @using (Html.BeginForm("ReviewersSuggestions", "ReviewerSuggestion", FormMethod.Post))
-{
+{ 
     @Html.AntiForgeryToken()
     @Html.HiddenFor(x => x.ID)
     @Html.HiddenFor(x => x.IsAssociateFinalSubmit, new { id = "hdnIsAssociateFinalSubmit" })
