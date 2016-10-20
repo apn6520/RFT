@@ -16,7 +16,6 @@
 @Html.Raw(TempData["msg"])
 @using (Html.BeginForm("BookScreening", "Manuscript", FormMethod.Post))
 {
-
     @Html.AntiForgeryToken()
     @Html.HiddenFor(model => model.BookScreeningID, new { id = "dbID" })
     @Html.HiddenFor(model => model.BookLoginID)
