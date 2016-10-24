@@ -30,7 +30,7 @@ namespace TransferDesk.MS.Web.Controllers
         {
             try
             {
-                //string conString = string.Empty;
+                string conString = string.Empty;
                 conString = Convert.ToString(ConfigurationManager.AppSettings["dbTransferDeskService"]);
                 _reviewerIndexDBRepositoriesReadSite = new ReviewerIndexDBRepositoriesReadSite(conString, Logger);
                 _reviewerIndexDBContext = new ReviewerIndexDBContext(conString);
