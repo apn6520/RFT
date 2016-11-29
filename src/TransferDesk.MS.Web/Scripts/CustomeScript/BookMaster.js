@@ -26,7 +26,6 @@
         window.location.href = AppPath + "Admin/BookMaster";
     });
 
-
     $('#IsActive').change(function () {
         if ($(this).is(":checked")) {
             $(this).val("true");
