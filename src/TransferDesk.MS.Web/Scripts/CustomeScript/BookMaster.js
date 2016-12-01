@@ -19,6 +19,7 @@
         }
         $('#btnBookMasterAdd').val("Update");
     });
+	
 
     $('#dvIsActive').css({ "display": "none" });
 
